@@ -4,13 +4,13 @@
 이 프로젝트는 코드 리뷰를 통해 서로의 코딩 역량을 향상시키고, 더 나은 코드 품질을 추구하는 스터디 그룹입니다. <br>이 스터디는 각자의 코드에 대해 피드백을 주고받으며, 다양한 관점에서 코드를 개선할 수 있는 기회를 제공합니다. <br>본 레포지토리는 HTML, CSS, SASS, JavaScript등의 기술을 포함하여 프로젝트의 전반적인 내용을 다룹니다.
 
 ## 목차
-- [소개]()
-- [기술 스택]()
-- [설치 및 실행]()
-- [사용 방법]()
-- [기여 방법]()
-- [프로젝트 구조]()
-- [팀 구성원]()
+- [소개](https://github.com/likelion-10-code-review/Code-Review-Study/blob/main/README.md#%EC%86%8C%EA%B0%9C)
+- [기술 스택](https://github.com/likelion-10-code-review/Code-Review-Study/blob/main/README.md#%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D)
+- [설치 및 실행](https://github.com/likelion-10-code-review/Code-Review-Study/blob/main/README.md#%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%8B%A4%ED%96%89)
+- [사용 방법](https://github.com/likelion-10-code-review/Code-Review-Study/blob/main/README.md#%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95)
+- [기여 방법](https://github.com/likelion-10-code-review/Code-Review-Study/blob/main/README.md#%EA%B8%B0%EC%97%AC-%EB%B0%A9%EB%B2%95)
+- [프로젝트 구조](https://github.com/likelion-10-code-review/Code-Review-Study/blob/main/README.md#%EA%B8%B0%EC%97%AC-%EB%B0%A9%EB%B2%95)
+- [팀 구성원](https://github.com/likelion-10-code-review/Code-Review-Study/blob/main/README.md#%EA%B8%B0%EC%97%AC-%EB%B0%A9%EB%B2%95)
 
 ## 기술 스택
 - **프론트엔드:** HTML, CSS, Sass, Javascript, React
