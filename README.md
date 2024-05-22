@@ -47,18 +47,6 @@
 - 충분한 테스트 코드를 작성합니다.
 - 자세한 커밋 메시지를 작성합니다.
 
-## 프로젝트 구조
-프로젝트의 디렉토리 구조에 대해 설명합니다.<br>
-├── [이니셜]<br>
- │  ├── src<br>
- │  │    ├── scss (선택)<br>
- │  │    └── styles (선택)<br>
- │  └── index.html<br>
- ├── .gitignore<br>
- ├── package.json<br>
- └── README.md<br>
-
-
 ## 팀 구성원
 - **스장:** 김한울 (이메일: woolen_h@kakao.com)
 - **스원:** 이가영
