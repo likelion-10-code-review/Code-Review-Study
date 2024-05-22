@@ -50,10 +50,10 @@
 ## 프로젝트 구조
 프로젝트의 디렉토리 구조에 대해 설명합니다.<br>
 ├── [이니셜]<br>
-│ ├── src<br>
-│ │ ├── scss (선택)<br>
-│ │ └── styles (선택)<br>
-│ └── index.html<br>
+│    ├── src<br>
+│    │    ├── scss (선택)<br>
+│    │    └── styles (선택)<br>
+│    └── index.html<br>
 ├── .gitignore<br>
 ├── package.json<br>
 └── README.md<br>
