@@ -1,0 +1,10 @@
+@use "./../utils" as *;
+
+.button {
+  width: 100%;
+  padding: $small-spacing;
+  border: none;
+  border-radius: 0.5rem + $small-spacing;
+  background-color: $red;
+  color: $white;
+}
