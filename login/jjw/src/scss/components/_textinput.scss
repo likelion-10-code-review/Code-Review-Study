@@ -1,0 +1,21 @@
+@use "./../utils" as *;
+
+$input-spacing: $small-spacing;
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+
+  .text-input {
+    width: 100%;
+    padding: $input-spacing 0;
+    border: none;
+    border-bottom: 2px solid #f7f7f7;
+  }
+
+  .input-icon {
+    position: absolute;
+    top: $input-spacing;
+    right: 0;
+  }
+}
