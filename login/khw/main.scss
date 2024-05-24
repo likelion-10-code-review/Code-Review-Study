@@ -1,13 +1,10 @@
 @import "reset.css";
 @import "base";
+@import "variables";
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
+body {
+  width: 100%;
   height: 100vh;
-  font-size: 16px;
 
   &::before {
     content: "";
@@ -16,41 +13,69 @@ main {
     display: block;
     width: 50%;
     height: inherit;
-    background-color: #f83e4b;
+    background-color: $main-color;
   }
-
-  header,
-  footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .sign-up {
-    display: flex;
-    position: absolute;
-    left: calc(50% - 185px);
-    top: 20%;
+  main {
+    @include flex-sb;
     flex-direction: column;
-    width: 300px;
-    background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 0 15px rgba(#000, 0.15);
-    padding: 2rem;
-    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    padding: 1rem;
 
-    h1 {
-      &::after {
-        content: "";
-        display: block;
-        margin: 1rem auto 2rem;
-        width: 10%;
-        border-bottom: 3px solid #ffa1a9;
-        z-index: 10;
+    .bg-txt {
+      .content {
+        @include txt-sm;
+        margin-top: 0.25rem;
       }
     }
-    .login-trf {
-      margin-top: 2rem;
+    header,
+    footer {
+      width: 100%;
+      @include flex-sb;
+    }
+    header {
+      menu {
+        i {
+          color: $main-color;
+        }
+      }
+    }
+    .sign-up {
+      display: flex;
+      position: absolute;
+      left: calc(50% - 150px);
+      top: 20%;
+      flex-direction: column;
+      width: 300px;
+      background-color: $white;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba($black, 0.15);
+      padding: 2rem;
+      text-align: center;
+
+      h1 {
+        &::after {
+          content: "";
+          display: block;
+          margin: 1rem auto 2rem;
+          width: 10%;
+          border-bottom: 1px solid $main-color;
+          z-index: 10;
+        }
+      }
+      .login-trf {
+        @include txt-sm;
+        margin-top: 2rem;
+      }
+    }
+    footer {
+      .home {
+        i {
+          @include txt-sm;
+          margin-right: 0.25rem;
+        }
+      }
     }
   }
 }

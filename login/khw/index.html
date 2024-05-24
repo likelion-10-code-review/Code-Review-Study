@@ -6,41 +6,44 @@
     <title>[멋쟁이사자처럼 10기] 코드 리뷰 스터디 - Sign Up 컴포넌트</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css" />
   </head>
   <body>
     <main>
       <header>
-        <figure class="logo">
-          <img src="" alt="logo" />
-        </figure>
-        <menu>menu</menu>
+        <h1 class="logo">destiny</h1>
+        <menu><i class="fi fi-br-menu-burger"></i></menu>
       </header>
+      <div class="bg-txt">
+        <p class="title">let's kick now !</p>
+        <p class="content">It's Easy and takes less than 30 seconds.</p>
+      </div>
       <section class="sign-up">
         <h1>sign up</h1>
         <div class="input-group">
           <div class="input">
-            <label class="small-txt" for="signup-name">name<i class="fi fi-rr-user"></i></label>
-            <input type="text" name="signup-name" id="signup-name" placeholder="이름을 입력하세요." />
+            <label for="signup-name">name<i class="fi fi-rr-user"></i></label>
+            <input type="text" name="signup-name" id="signup-name" placeholder="이름" />
           </div>
           <div class="input">
-            <label class="small-txt" for="signup-email">email<i class="fi fi-rr-envelope"></i></label>
-            <input type="email" name="signup-email" id="signup-email" placeholder="이메일을 입력하세요." />
+            <label for="signup-email">email<i class="fi fi-rr-envelope"></i></label>
+            <input type="email" name="signup-email" id="signup-email" placeholder="이메일" />
           </div>
           <div class="input">
-            <label class="small-txt" for="signup-pw">password<i class="fi fi-rr-lock"></i></label>
-            <input type="password" name="signup-pw" id="signup-pw" placeholder="비밀번호를 입력하세요." />
+            <label for="signup-pw">password<i class="fi fi-rr-lock"></i></label>
+            <input type="password" name="signup-pw" id="signup-pw" placeholder="비밀번호" />
           </div>
         </div>
         <button class="btn btn-submit" type="submit">get started</button>
-        <p class="login-trf small-txt">
+        <p class="login-trf">
           Have an account? <a href="http://"><span class="point-txt">sign in</span></a>
         </p>
       </section>
       <footer>
-        <div class="home">home</div>
+        <div class="home"><i class="fi fi-br-angle-left"></i><span>home</span></div>
         <div class="copyright">&copy; copyright 2016</div>
       </footer>
     </main>
