@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
   </head>
   <body>
     <main>
@@ -21,20 +22,22 @@
         <h1>sign up</h1>
         <div class="input-group">
           <div class="input">
-            <label for="signup-name">name</label>
-            <input type="text" name="signup-name" id="signup-name" />
+            <label class="small-txt" for="signup-name">name<i class="fi fi-rr-user"></i></label>
+            <input type="text" name="signup-name" id="signup-name" placeholder="이름을 입력하세요." />
           </div>
           <div class="input">
-            <label for="signup-email">email</label>
-            <input type="email" name="signup-email" id="signup-email" />
+            <label class="small-txt" for="signup-email">email<i class="fi fi-rr-envelope"></i></label>
+            <input type="email" name="signup-email" id="signup-email" placeholder="이메일을 입력하세요." />
           </div>
           <div class="input">
-            <label for="signup-pw">password</label>
-            <input type="password" name="signup-pw" id="signup-pw" />
+            <label class="small-txt" for="signup-pw">password<i class="fi fi-rr-lock"></i></label>
+            <input type="password" name="signup-pw" id="signup-pw" placeholder="비밀번호를 입력하세요." />
           </div>
         </div>
-        <button type="submit">get started</button>
-        <p>Have an account? <a href="http://">sign in</a></p>
+        <button class="btn btn-submit" type="submit">get started</button>
+        <p class="login-trf small-txt">
+          Have an account? <a href="http://"><span class="point-txt">sign in</span></a>
+        </p>
       </section>
       <footer>
         <div class="home">home</div>

@@ -1,0 +1,118 @@
+@import "reset.css";
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.input input {
+  width: inherit;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 2.5rem;
+  padding: 0.25rem 0 0.25rem;
+  color: #ff3c49;
+  transition: all 0.3s ease-in-out;
+}
+.input input:focus {
+  border-color: #ff3c49;
+}
+.input input::placeholder {
+  color: #dfdfdf;
+}
+.input input:not(:placeholder-shown) {
+  border-color: rgba(255, 60, 73, 0.2);
+}
+.input label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.input label i {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  text-transform: capitalize;
+}
+.btn-submit {
+  background-color: #ff3c49;
+  box-shadow: 0 0 5px rgba(255, 60, 73, 0.5);
+  color: #fff;
+}
+
+body *,
+body *::after,
+body *::before {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 300;
+  letter-spacing: -0.75px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.small-txt {
+  font-size: 0.75rem;
+}
+
+.point-txt {
+  color: #ff3c49;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+}
+main::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: 50%;
+  height: inherit;
+  background-color: #f83e4b;
+}
+main header,
+main footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .sign-up {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 185px);
+  top: 20%;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  text-align: center;
+}
+main .sign-up h1::after {
+  content: "";
+  display: block;
+  margin: 1rem auto 2rem;
+  width: 10%;
+  border-bottom: 3px solid #ffa1a9;
+  z-index: 10;
+}
+main .sign-up .login-trf {
+  margin-top: 2rem;
+}

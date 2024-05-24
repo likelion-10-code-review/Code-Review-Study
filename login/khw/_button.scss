@@ -1,0 +1,11 @@
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  text-transform: capitalize;
+
+  &-submit {
+    background-color: #ff3c49;
+    box-shadow: 0 0 5px rgba(#ff3c49, 0.5);
+    color: #fff;
+  }
+}

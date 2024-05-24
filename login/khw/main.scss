@@ -1,0 +1,56 @@
+@import "reset.css";
+@import "base";
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 50%;
+    height: inherit;
+    background-color: #f83e4b;
+  }
+
+  header,
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sign-up {
+    display: flex;
+    position: absolute;
+    left: calc(50% - 185px);
+    top: 20%;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(#000, 0.15);
+    padding: 2rem;
+    text-align: center;
+
+    h1 {
+      &::after {
+        content: "";
+        display: block;
+        margin: 1rem auto 2rem;
+        width: 10%;
+        border-bottom: 3px solid #ffa1a9;
+        z-index: 10;
+      }
+    }
+    .login-trf {
+      margin-top: 2rem;
+    }
+  }
+}
