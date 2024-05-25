@@ -5,10 +5,10 @@ $burger-width: 3rem;
 .burger-button {
   @include gridbox(1, 1);
   width: $burger-width;
+  height: 0.6 * $burger-width;
   padding: 0;
   border: none;
   background: transparent;
-  aspect-ratio: 5 / 3;
   cursor: pointer;
 }
 
