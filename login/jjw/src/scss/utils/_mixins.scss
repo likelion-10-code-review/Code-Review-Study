@@ -11,3 +11,32 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+// Flexbox
+@mixin flexbox(
+  $direction: row,
+  $wrap: nowrap,
+  $justify: null,
+  $align: null,
+  $gap: null
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// Gridbox
+@mixin gridbox(
+  $column-count,
+  $row-count: null,
+  $column-gap: null,
+  $row-gap: null
+) {
+  display: grid;
+  grid-template-columns: repeat($column-count, 1fr);
+  grid-template-rows: repeat($row-count, 1fr);
+  gap: $row-gap $column-gap;
+}

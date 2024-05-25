@@ -6,16 +6,13 @@ $form-spacing: $large-spacing;
 
 .signup-form {
   fieldset {
-    display: flex;
+    @include flexbox(column, $align: center, $gap: $form-spacing);
     width: 30vw;
     padding: $form-spacing;
     border: none;
     border-radius: 0.5 * $form-spacing;
     box-shadow: 0 0 0.75rem $gray-1;
     background-color: $white;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: $form-spacing;
   }
 
   &-title {
