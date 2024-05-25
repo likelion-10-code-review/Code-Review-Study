@@ -1,0 +1,29 @@
+@use "./../utils" as *;
+@use "./../components/textinput";
+@use "./../components/button";
+
+$form-spacing: $large-spacing;
+
+.signup-form {
+  fieldset {
+    display: flex;
+    width: 30vw;
+    padding: $form-spacing;
+    border: none;
+    border-radius: 0.5 * $form-spacing;
+    box-shadow: 0 0 0.75rem $gray-1;
+    background-color: $white;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: $form-spacing;
+  }
+
+  &-title {
+    font-size: $large-text;
+  }
+}
+
+.signin-link {
+  color: $red;
+  text-decoration: none;
+}
