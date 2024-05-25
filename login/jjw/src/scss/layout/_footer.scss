@@ -1,1 +1,7 @@
 @use "./../utils" as *;
+@use "./../components/backlink";
+
+.footer {
+  @include flexbox($justify: space-between);
+  width: 100%;
+}
