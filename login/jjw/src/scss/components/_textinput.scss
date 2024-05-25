@@ -11,11 +11,13 @@ $input-spacing: $small-spacing;
     padding: $input-spacing 0;
     border: none;
     border-bottom: 2px solid #f7f7f7;
+    font-size: $medium-text;
   }
 
   .input-icon {
     position: absolute;
-    top: $input-spacing;
+    bottom: 50%;
     right: 0;
+    translate: 0 50%;
   }
 }

@@ -4,7 +4,8 @@
   width: 100%;
   padding: $small-spacing;
   border: none;
-  border-radius: 0.5rem + $small-spacing;
+  border-radius: 1.5rem + $small-spacing;
   background-color: $red;
+  font-size: $medium-text;
   color: $white;
 }
