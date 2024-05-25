@@ -1,6 +1,6 @@
 @use "./../utils" as *;
 
-$burger-width: 3rem;
+$burger-width: 2rem;
 
 .burger-button {
   @include gridbox(1, 1);
