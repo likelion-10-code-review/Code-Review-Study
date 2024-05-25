@@ -1,6 +1,6 @@
 @use "./../utils" as *;
 
-$input-spacing: $small-spacing;
+$text-input-spacing: $small-spacing;
 
 .input-wrapper {
   position: relative;
@@ -8,7 +8,7 @@ $input-spacing: $small-spacing;
 
   .text-input {
     width: 100%;
-    padding: $input-spacing 0;
+    padding: $text-input-spacing 0;
     border: none;
     border-bottom: 2px solid $gray-2;
     font-size: $base-text;
