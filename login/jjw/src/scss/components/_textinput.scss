@@ -10,8 +10,8 @@ $input-spacing: $small-spacing;
     width: 100%;
     padding: $input-spacing 0;
     border: none;
-    border-bottom: 2px solid #f7f7f7;
-    font-size: $medium-text;
+    border-bottom: 2px solid $gray-2;
+    font-size: $base-text;
   }
 
   .input-icon {
