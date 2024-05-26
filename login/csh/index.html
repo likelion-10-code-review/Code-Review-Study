@@ -15,27 +15,36 @@
   <section class="login">
     <header>
       <h1>Destiny</h1>
-      <span class="fas fa-bars"></span>
+      <span class="fas fa-bars menu-icon"></span>
     </header>
-    <div role="group" class="">
-      <p>Let's Kick Now!</p>
+    <div role="group" class="message-center">
+      <p style="font-size: 1.5rem; font-weight: bold;">Let's Kick Now !</p>
       <p>It's Easy and take less than 30 seconds.</p>
     </div>
-    <form action="" role="group">
-      <fieldset class="" action="">
-        <legend class="">SIGN UP</legend>
-        <label for="user-name">name<span class="fas fa-user"></span></label>
-        <input type="text" id="user-name" placeholder="" />
-        <label for="user-email">Email <span class="fas fa-envelope"></span></label>
-        <input type="email" id="user-email" placeholder="" />
-        <label for="pwd">Password <span class="fas fa-lock"></span></label>
-        <input type="password" id="pwd" placeholder="" />
+    <form action="post" name="login-form">
+      <fieldset class="login-input-group">
+        <legend class="signup-title">SIGN UP</legend>
+        <div class="input-box-wrapper">
+          <label for="user-name" class="sr-only">Name</label>
+          <input type="text" id="user-name" placeholder="Name" required class="login-inputbox" />
+          <span class="fas fa-user"></span>
+        </div>
+        <div class="input-box-wrapper">
+          <label for="user-email" class="sr-only">Email</label>
+          <input type="email" id="user-email" placeholder="Email" required class="login-inputbox" />
+          <span class="fas fa-envelope"></span>
+        </div>
+        <div class="input-box-wrapper">
+          <label for="pwd" class="sr-only">Password</label>
+          <input type="password" id="pwd" placeholder="Password" required class="login-inputbox" />
+          <span class="fas fa-lock"></span>
+        </div>
       </fieldset>
-      <button type="submit">Get Started</button>
-      <span>Have an account?</span><a href="">Sign In</a>
+      <button type="submit" class="login-button">Get Started</button>
+      <span class="sign-in-link">Have an account?<a href="/" style=" color: var(--main-color)"> Sign In</a></span>
     </form>
-    <footer class="">
-      <a href=""><span class="fas fa-angle-left">HOME</span></a>
+    <footer class="footer-group">
+      <a href=""><span class="fas fa-angle-left home-color"></span><span class="home-font home-color">HOME</span></a>
     </footer>
   </section>
 </body>
