@@ -9,4 +9,6 @@
   margin: auto;
   padding: $large-spacing;
   border-radius: 0.5 * $large-spacing;
+  background: linear-gradient(to right, $red 50%, $white 50%);
+  box-shadow: 0 0 0.75rem $gray-1;
 }
