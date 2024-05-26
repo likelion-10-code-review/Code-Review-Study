@@ -1,4 +1,5 @@
 @use "./../utils" as *;
+@use "./../components/devider";
 @use "./../components/textinput";
 @use "./../components/button";
 
@@ -23,6 +24,10 @@ $form-spacing: $large-spacing;
   &-title {
     font-size: $large-text;
   }
+}
+
+.signin-link-wrapper {
+  order: 1;
 }
 
 .signin-link {
