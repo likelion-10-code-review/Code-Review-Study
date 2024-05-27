@@ -1,9 +1,8 @@
 @use "./../utils" as *;
 @use "./../layout";
-@use "./../components/form";
 
 .signup-container {
-  @include flexbox(column, $justify: center, $align: center);
+  @include flexbox($justify: center, $align: center);
   position: relative;
   width: 80vw;
   height: 90vh;
