@@ -8,12 +8,11 @@ $form-spacing: $large-spacing;
 .signup-form {
   width: 100%;
   @include mq(sm) {
-    width: 28rem;
+    width: 25rem;
   }
 
   fieldset {
     @include flexbox(column, $align: center, $gap: $form-spacing);
-    flex: 1 1 0;
     padding: $form-spacing;
     border: none;
     border-radius: 0.5 * $form-spacing;

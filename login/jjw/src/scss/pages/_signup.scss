@@ -3,10 +3,11 @@
 @use "./../components/form";
 
 .signup-container {
-  @include flexbox(column, $justify: space-between, $align: center);
-  width: 90vw;
-  height: 99vh;
-  margin: auto;
+  @include flexbox(column, $justify: center, $align: center);
+  position: relative;
+  width: 80vw;
+  height: 90vh;
+  margin: 5vh auto;
   padding: $large-spacing;
   border-radius: 0.5 * $large-spacing;
   background: linear-gradient(to right, $red 50%, $white 50%);

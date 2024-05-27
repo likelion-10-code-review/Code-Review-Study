@@ -3,7 +3,10 @@
 
 .header {
   @include flexbox($justify: space-between);
+  position: absolute;
+  top: 0;
   width: 100%;
+  padding: $large-spacing;
 }
 
 .title {
