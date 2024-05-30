@@ -1,9 +1,0 @@
-@use "./../utils" as *;
-@use "./../components/form";
-
-.main {
-  width: 100%;
-  @include mq(sm) {
-    width: 25rem;
-  }
-}
