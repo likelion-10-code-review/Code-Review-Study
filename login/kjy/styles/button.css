@@ -1,0 +1,9 @@
+button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 2rem;
+  background: var(--pink-400);
+  color: var(--white);
+  font-size: 0.8rem;
+}

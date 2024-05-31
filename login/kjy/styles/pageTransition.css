@@ -1,0 +1,17 @@
+.page-transition {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--white);
+}
+
+.text-more {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.icon-arrow {
+  margin-right: 8px;
+  font-size: 1rem;
+  vertical-align: bottom;
+}
