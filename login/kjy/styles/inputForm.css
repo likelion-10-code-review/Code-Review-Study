@@ -1,0 +1,18 @@
+.form-login-wrapper {
+  h3 {
+    color: var(--gray-300);
+  }
+
+  .sign-in {
+    font-size: 0.6rem;
+  }
+}
+
+/* 로그인 input component */
+.form-login-component {
+  border-bottom: 1px solid var(--gray-300);
+
+  input {
+    border: none;
+  }
+}
