@@ -1,0 +1,32 @@
+@use "./../utils" as *;
+@use "./../components/devider";
+@use "./../components/textinput";
+@use "./../components/button";
+
+$form-spacing: $large-spacing;
+
+.signup-form {
+  width: 100%;
+
+  fieldset {
+    @include flexbox(column, $align: center, $gap: $form-spacing);
+    padding: $form-spacing;
+    border: none;
+    border-radius: 0.5 * $form-spacing;
+    box-shadow: 0 0 0.75rem $gray-1;
+    background-color: $white;
+  }
+
+  &-title {
+    font-size: $large-text;
+  }
+}
+
+.signin-link-wrapper {
+  order: 1;
+}
+
+.signin-link {
+  color: $red;
+  text-decoration: none;
+}

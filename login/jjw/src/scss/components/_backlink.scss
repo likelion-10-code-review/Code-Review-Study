@@ -1,0 +1,11 @@
+@use "./../utils" as *;
+
+.back-link {
+  @include flexbox($align: center, $gap: $x-small-spacing);
+  color: $white;
+  text-decoration: none;
+
+  &-icon {
+    font-size: $large-text;
+  }
+}
