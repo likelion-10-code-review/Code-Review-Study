@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <!-- 헤더 -->
+      <header class="header">
+        <!-- 로고 -->
+        <h1 class="title">Destiny</h1>
+        <!-- 메뉴버튼 -->
+        <button type="button" aria-label="메뉴 열기" class="burger-button">
+          <span class="burger-bar burger-bar-top"></span>
+          <span class="burger-bar burger-bar-middle"></span>
+          <span class="burger-bar burger-bar-bottom"></span>
+        </button>
+      </header>
+
+      <aside class="aside">
+        <h3 class="aside-message">Let's Kick Now!</h3>
+        <p>It's Easy and taking less than 30 seconds.</p>
+      </aside>
+
+      <main class="main">
+        <!-- Sign Up 폼 -->
+        <form action="/" class="signup-form">
+          <fieldset aria-labelledby="alt-lengend">
+            <h2 id="alt-lengend" class="signup-form-title">
+              SIGN UP
+              <!-- 구분선 -->
+              <hr class="devider" />
+            </h2>
+            <!-- Name Input -->
+            <div class="input-wrapper">
+              <label for="textInput" class="sr-only">Name</label>
+              <input
+                type="text"
+                id="textInput"
+                placeholder="Name"
+                class="text-input" />
+              <span class="fas fa-user input-icon"></span>
+            </div>
+            <!-- Email Input -->
+            <div class="input-wrapper">
+              <label for="emailInput" class="sr-only">Name</label>
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="Email"
+                class="text-input" />
+              <span class="fas fa-envelope input-icon"></span>
+            </div>
+            <!-- Password Input -->
+            <div class="input-wrapper">
+              <label for="passwordInput" class="sr-only">Name</label>
+              <input
+                type="password"
+                id="passwordInput"
+                placeholder="Password"
+                class="text-input" />
+              <span class="fas fa-lock input-icon"></span>
+            </div>
+            <!-- Signin Link -->
+            <div class="signin-link-wrapper">
+              <span>Have an account?</span>
+              <a href="/" class="signin-link">Sign in</a>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="button">Get Started</button>
+          </fieldset>
+        </form>
+      </main>
+
+      <!-- 푸터 -->
+      <footer class="footer">
+        <!-- HOME 링크 -->
+        <a href="/" class="back-link">
+          <span class="fas fa-angle-left back-link-icon"></span>
+          HOME
+        </a>
+        <!-- Copyright -->
+        <small>&copy; Copyright 2016</small>
+      </footer>
+    </div>
+  </body>
+</html>
