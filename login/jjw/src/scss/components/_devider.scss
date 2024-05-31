@@ -1,0 +1,7 @@
+@use "./../utils" as *;
+
+.devider {
+  width: 30%;
+  margin: 1rem auto;
+  border-color: $red;
+}

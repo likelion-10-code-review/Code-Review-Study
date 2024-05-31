@@ -1,0 +1,16 @@
+@use "./../utils" as *;
+@use "./../components/burger";
+
+.header {
+  @include flexbox($justify: space-between);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: $large-spacing;
+}
+
+.title {
+  font-size: $extra-large-text;
+  font-weight: 900;
+  color: $white;
+}
