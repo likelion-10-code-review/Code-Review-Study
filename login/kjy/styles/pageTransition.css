@@ -1,17 +1,21 @@
+/* -------------------------------------------------------------------------- */
+/*                                   페이지 전환                                   */
+/* -------------------------------------------------------------------------- */
+
 .page-transition {
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: var(--large-spacing);
+  left: var(--large-spacing);
   color: var(--white);
 }
 
 .text-more {
-  font-size: 0.6rem;
+  font-size: var(--x-small-text);
   font-weight: bold;
 }
 
 .icon-arrow {
-  margin-right: 8px;
-  font-size: 1rem;
+  margin-right: var(--small-spacing);
+  font-size: var(--base-text);
   vertical-align: bottom;
 }
