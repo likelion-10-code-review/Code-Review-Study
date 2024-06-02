@@ -72,6 +72,7 @@
 
 .sign {
   font-size: 0.9rem;
+  order: 2;
 
   a {
     color: var(--primary);
