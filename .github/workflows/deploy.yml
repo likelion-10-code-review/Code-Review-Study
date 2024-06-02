@@ -1,0 +1,120 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - kbr
+      - khw
+      - lgy
+      - kjy
+      - jjw
+      - ajm
+      - khj
+      - csh
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy kbr branch
+      if: github.ref == 'refs/heads/kbr'
+      run: |
+        echo "Deploying kbr branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy kbr branch"
+        git push origin `git subtree split --prefix dist kbr-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/kbr"
+
+    - name: Deploy khw branch
+      if: github.ref == 'refs/heads/khw'
+      run: |
+        echo "Deploying khw branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy khw branch"
+        git push origin `git subtree split --prefix dist khw-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/khw"
+
+    - name: Deploy lgy branch
+      if: github.ref == 'refs/heads/lgy'
+      run: |
+        echo "Deploying lgy branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy lgy branch"
+        git push origin `git subtree split --prefix dist lgy-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/lgy"
+
+    - name: Deploy kjy branch
+      if: github.ref == 'refs/heads/kjy'
+      run: |
+        echo "Deploying kjy branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy kjy branch"
+        git push origin `git subtree split --prefix dist kjy-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/kjy"
+
+    - name: Deploy jjw branch
+      if: github.ref == 'refs/heads/jjw'
+      run: |
+        echo "Deploying jjw branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy jjw branch"
+        git push origin `git subtree split --prefix dist jjw-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/jjw"
+
+    - name: Deploy ajm branch
+      if: github.ref == 'refs/heads/ajm'
+      run: |
+        echo "Deploying ajm branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy ajm branch"
+        git push origin `git subtree split --prefix dist ajm-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/ajm"
+
+    - name: Deploy khj branch
+      if: github.ref == 'refs/heads/khj'
+      run: |
+        echo "Deploying khj branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy khj branch"
+        git push origin `git subtree split --prefix dist khj-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/khj"
+
+    - name: Deploy csh branch
+      if: github.ref == 'refs/heads/csh'
+      run: |
+        echo "Deploying csh branch..."
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy csh branch"
+        git push origin `git subtree split --prefix dist csh-pages`:gh-pages --force
+        echo "https://likelion-10-code-review.github.io/Code-Review-Study/csh"
