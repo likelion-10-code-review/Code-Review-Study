@@ -1,6 +1,4 @@
-@import "input";
-@import "button";
-@import "variables";
+@use "variables" as var;
 
 body *,
 body *::after,
@@ -21,31 +19,31 @@ body *::before {
 
 h1.logo {
   font-family: "DM Serif Display", serif;
-  @include txt-lg;
-  @include text-cap;
-  color: $white;
+  @include var.txt-lg;
+  @include var.text-cap;
+  color: var.$white;
 }
 
 .bg-txt {
-  color: $white;
+  color: var.$white;
 
   .title {
-    @include txt-lg;
+    @include var.txt-lg;
+    @include var.text-cap;
     font-weight: 600;
-    @include text-cap;
   }
 }
 
 .home {
-  color: $white;
+  color: var.$white;
 }
 
 .copyright {
-  @include txt-sm;
+  @include var.txt-sm;
 }
 
 .point-txt {
-  color: $main-color;
+  color: var.$main-color;
   font-weight: 600;
   @include text-cap;
 }
