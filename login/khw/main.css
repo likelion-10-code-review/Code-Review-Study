@@ -90,6 +90,55 @@ h1.logo {
   text-transform: capitalize;
 }
 
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header button {
+  background-color: transparent;
+}
+header button i {
+  color: #ff3c49;
+}
+
+.sign-up {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 150px);
+  top: 20%;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  text-align: center;
+}
+.sign-up h1::after {
+  content: "";
+  display: block;
+  margin: 1rem auto 2rem;
+  width: 10%;
+  border-bottom: 1px solid #ff3c49;
+  z-index: 10;
+}
+.sign-up .login-trf {
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .home i {
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -116,41 +165,8 @@ body main .bg-txt .content {
   font-size: 0.75rem;
   margin-top: 0.25rem;
 }
-body main header,
-body main footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-body main header button i {
-  color: #ff3c49;
-}
-body main .sign-up {
-  display: flex;
-  position: absolute;
-  left: calc(50% - 150px);
-  top: 20%;
-  flex-direction: column;
-  width: 300px;
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  padding: 2rem;
-  text-align: center;
-}
-body main .sign-up h1::after {
-  content: "";
-  display: block;
-  margin: 1rem auto 2rem;
-  width: 10%;
-  border-bottom: 1px solid #ff3c49;
-  z-index: 10;
-}
-body main .sign-up .login-trf {
-  font-size: 0.75rem;
-  margin-top: 2rem;
-}
-body main footer .home i {
+
+footer .home i {
   font-size: 0.75rem;
   margin-right: 0.25rem;
 }
