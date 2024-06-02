@@ -1,0 +1,25 @@
+// 변수
+$white: #fff;
+$main-color: #ff3c49;
+$black: #000;
+$dk-gray: #a0a0a0;
+$md-gray: #dfdfdf;
+$lg-gray: #f5f5f5;
+
+// 믹스인
+@mixin text-up {
+  text-transform: uppercase;
+}
+@mixin text-cap {
+  text-transform: capitalize;
+}
+@mixin txt-lg {
+  font-size: 1.5rem;
+}
+@mixin txt-sm {
+  font-size: 0.75rem;
+}
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+}

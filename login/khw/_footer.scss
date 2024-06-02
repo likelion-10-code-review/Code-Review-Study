@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  @include flex-sb;
+
+  .home {
+    i {
+      @include txt-sm;
+      margin-right: 0.25rem;
+    }
+  }
+}
