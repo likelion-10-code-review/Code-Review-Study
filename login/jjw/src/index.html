@@ -19,7 +19,11 @@
       <!-- 헤더 -->
       <header class="header">
         <!-- 로고 -->
-        <h1 class="title">Destiny</h1>
+        <h1 class="header-title">
+          <a href="#" aria-label="홈 페이지로 이동" class="header-title-link"
+            >Destiny</a
+          >
+        </h1>
         <!-- 메뉴버튼 -->
         <button type="button" aria-label="메뉴 열기" class="burger-button">
           <span class="burger-bar burger-bar-top"></span>
@@ -29,29 +33,32 @@
       </header>
 
       <aside class="aside">
-        <h3 class="aside-message">Let's Kick Now!</h3>
+        <p class="aside-message">Let's Kick Now!</p>
         <p>It's Easy and taking less than 30 seconds.</p>
       </aside>
 
       <main class="main">
         <!-- Sign Up 폼 -->
-        <form action="/" class="signup-form">
+        <form action="/" method="post" id="signupForm" class="signup-form">
           <fieldset aria-labelledby="alt-lengend">
-            <h2 id="alt-lengend" class="signup-form-title">
-              SIGN UP
+            <div>
+              <!-- Form Title -->
+              <h2 id="alt-lengend" class="signup-form-title">SIGN UP</h2>
               <!-- 구분선 -->
-              <hr class="devider" />
-            </h2>
+              <div class="devider"></div>
+            </div>
 
             <!-- Name Input -->
             <div class="input-wrapper">
-              <label for="textInput" class="sr-only">Name</label>
+              <label for="nameInput" class="sr-only">Name</label>
               <input
                 type="text"
-                id="textInput"
+                id="nameInput"
+                name="userName"
                 placeholder="Name"
+                required
                 class="text-input" />
-              <span class="fas fa-user input-icon"></span>
+              <span aria-hidden="true" class="fas fa-user input-icon"></span>
             </div>
 
             <!-- Email Input -->
@@ -60,9 +67,13 @@
               <input
                 type="email"
                 id="emailInput"
+                name="userEmail"
                 placeholder="Email"
+                required
                 class="text-input" />
-              <span class="fas fa-envelope input-icon"></span>
+              <span
+                aria-hidden="true"
+                class="fas fa-envelope input-icon"></span>
             </div>
 
             <!-- Password Input -->
@@ -71,19 +82,21 @@
               <input
                 type="password"
                 id="passwordInput"
+                name="userPassword"
                 placeholder="Password"
+                required
                 class="text-input" />
-              <span class="fas fa-lock input-icon"></span>
+              <span aria-hidden="true" class="fas fa-lock input-icon"></span>
             </div>
 
             <!-- Signin Link -->
             <div class="signin-link-wrapper">
               <span>Have an account?</span>
-              <a href="/" class="signin-link">Sign in</a>
+              <a href="#" class="signin-link">Sign in</a>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="button">Get Started</button>
+            <button type="submit" class="submit-button">Get Started</button>
           </fieldset>
         </form>
       </main>
@@ -91,8 +104,10 @@
       <!-- 푸터 -->
       <footer class="footer">
         <!-- HOME 링크 -->
-        <a href="/" class="back-link">
-          <span class="fas fa-angle-left back-link-icon"></span>
+        <a href="#" class="back-link">
+          <span
+            aria-hidden="true"
+            class="fas fa-angle-left back-link-icon"></span>
           HOME
         </a>
         <!-- Copyright -->
