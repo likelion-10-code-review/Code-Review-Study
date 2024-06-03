@@ -1,0 +1,6 @@
+
+button{
+  all: unset; 
+  font-size: 20px;
+  color: var(--primary);
+}

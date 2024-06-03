@@ -3,7 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style/nomalize.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>과제1 - Sign Up</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- header 요소 -->
+      <header class="header">
+          <h1 class="logo">
+            <a href="https://dribbble.com/shots/2773952/attachments/2773952-Sign-Up?mode=media">
+              <span role="img" aria-label="데스티니" height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">Destiny</span>
+            </a>
+          </h1>
+          <button type="button" class="button-menu" aria-label="메인메뉴 열기"><span class="fas fa-bars" aria-hidden="true"></span></button>
+      </header>
+      
+      <!-- form 요소 -->
+      <form action="" class="signup-form">
+        <div class="signup-form-heading">
+          <h2>SIGN UP</h2>
+          <div class="underline" aria-hidden="true"></div>
+        </div>
+        <!-- 이름, 아이디, 비번 컴포넌트 -->
+        <div class="signup-form-input">
+          <div class="input-element" role="group">
+            <label for="username" class="sr-only">Name</label>
+            <input type="text" id="username" placeholder="Name" />
+            <span class="icon fas fa-user"></span>
+          </div>
+          <div class="input-element" role="group">
+            <label for="useremail" class="sr-only">Email</label>
+            <input type="email" id="useremail" placeholder="Email"/>
+            <span class="icon fas fa-envelope"></span>
+          </div>
+          <div class="input-element" role="group">
+            <label for="userpassword" class="sr-only">Password</label>
+            <input type="password" id="userpassword" placeholder="Password"/>
+            <span class="icon fas fa-lock"></span>
+          </div>
+        </div>
+        <div class="signin-form-click">
+          <span>Have an account?</span>
+          <a href="/" target="_self">Sign in</a>
+        </div>
+        <button class="submit-button" type="submit">Create Account</button>
+      </form>
+
+      <!-- 배경 텍스트 -->
+      <div class="background-text">
+        <div class="text main" aria-hidden="true">Let's Kick Now !</div>
+        <div class="text sub" aria-hidden="true">It's Easy and takes less than 30 seconds.</div>
+      </div>
+
+      <div class="footer">
+        <!-- Home으로 이동 -->
+        <button class="back-to-home" type="button" aria-label="홈으로 돌아가기"><span class="fas fa-angle-left">  </span>HOME</button>
+        <!-- Footer -->
+        <div role="contentinfo" class="copyright" aria-hidden="true">&copy;Copyright 2024</div>
+      </div>
+    </div> 
+  </body>
 </html>
