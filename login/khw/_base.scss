@@ -1,0 +1,49 @@
+@use "variables" as var;
+
+body *,
+body *::after,
+body *::before {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.sign-up {
+  h1 {
+    font-weight: 300;
+    letter-spacing: -0.75px;
+    font-size: 1.125rem;
+    @include text-up;
+  }
+}
+
+h1.logo {
+  font-family: "DM Serif Display", serif;
+  @include var.txt-lg;
+  @include var.text-cap;
+  color: var.$white;
+}
+
+.bg-txt {
+  color: var.$white;
+
+  .title {
+    @include var.txt-lg;
+    @include var.text-cap;
+    font-weight: 600;
+  }
+}
+
+.home {
+  color: var.$white;
+}
+
+.copyright {
+  @include var.txt-sm;
+}
+
+.point-txt {
+  color: var.$main-color;
+  font-weight: 600;
+  @include text-cap;
+}

@@ -1,0 +1,25 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray-100: #f8f7f7;
+  --gray-200: #dcdbdb;
+  --gray-300: #b3abab;
+  --pink-100: #facfd2;
+  --pink-200: #f69ca2;
+  --pink-300: #f77c83;
+  --pink-400: #fa404d;
+
+  --xx-small-text: 0.5rem;
+  --x-small-text: 0.6rem;
+  --small-text: 0.8rem;
+  --base-text: 1rem;
+  --medium-text: 1.3rem;
+  --large-text: 1.5rem;
+
+  --small-spacing: 0.8rem;
+  --base-spacing: 1rem;
+  --medium-spacing: 1.5rem;
+  --large-spacing: 2rem;
+}
+
+/* 파일이 삭제된 이유에 대해 알고 싶습니다.. */

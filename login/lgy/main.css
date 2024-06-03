@@ -1,0 +1,154 @@
+@import url(./style/base.css);
+@import url(./style/theme.css);
+@import url(./component/button-menu.css);
+@import url(./component/input-element.css);
+@import url(./component/button-submit.css);
+
+/* 배경 이미지 */
+
+
+body{
+  margin: 0;
+  padding: 1.5rem;
+  height: 100%;
+  /* 배경 색 반반 지정 */
+  background-image: linear-gradient(to right, var(--primary) 50%, white 50%);
+}
+
+.container{
+  /* min-height: 100vh; */
+  min-height: calc(100vh - 3rem);
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+
+  .background-text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    color: var(--white);
+
+    .main{
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .sub{
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  }
+}
+
+
+/* header 요소 */
+header{
+  position: sticky;
+  /* height: 100%;
+  width: 100%; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  h1{
+    font: normal 400 1.5rem "DM Serif Display", serif;
+    color: var(--white);
+  }
+}
+
+
+/* form 요소 */
+.signup-form{
+  position: relative;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 20px;
+  padding: 2.5rem;
+  align-items: center;
+  margin: auto;
+  background-color: var(--white);
+  color: var(--gray-700);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.12);
+
+
+  /* 제목 컨테이너 */
+  h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+
+  .underline{
+    background-color: var(--primary);
+    width: 15px;
+    height: 2px;
+    margin : 0 auto;
+    margin-bottom: 2rem;;
+  }
+
+
+  /* 이름, 아이디, 비번 컴포넌트 */
+  .signup-form-input{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.5rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  /* input-element 컴포넌트 [Name] 삽입 */
+  /* input-element 컴포넌트 [Email] 삽입 */
+  /* input-element 컴포넌트 [Password] 삽입 */
+  }
+
+  /* 제출 버튼 */
+  .submit-button{
+  }
+
+  /* 폼 클릭 컨테이너 */
+  .signin-form-click{
+    font-size: 0.85rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+    order: 1;
+
+    a{
+      color: var(--primary);
+    }
+  }
+}
+
+
+/* footer 요소 */
+.footer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  .back-to-home{
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--white);
+    
+    .fas{
+      margin-right: 1rem;
+    }
+  }
+  
+
+  .copyright{
+    color: var(--gray-600);
+    display: inline-block;
+  }
+  
+}
+
+
+
+/* 숨김 콘텐츠 */
+.sr-only {
+  /* label 숨기기 */
+  display: none;
+}

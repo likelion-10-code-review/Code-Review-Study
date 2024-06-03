@@ -1,0 +1,31 @@
+/* -------------------------------------------------------------------------- */
+/*                                   로그인 버튼                                   */
+/* -------------------------------------------------------------------------- */
+.login-btn {
+  width: 100%;
+  padding: var(--small-spacing);
+  border: none;
+  border-radius: var(--large-spacing);
+  background: var(--pink-400);
+  color: var(--white);
+  font-size: var(--small-text);
+  box-shadow: 2px 2px 10px var(--gray-300);
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    메뉴 버튼                                   */
+/* -------------------------------------------------------------------------- */
+.menu-btn {
+  position: absolute;
+  top: var(--large-spacing);
+  right: var(--large-spacing);
+  padding: 0;
+  border: none;
+  font-size: var(--medium-text);
+  background: none;
+  color: var(--pink-400);
+  cursor: pointer;
+}
+
+/* 파일이 삭제된 이유에 대해 알고 싶습니다.. */

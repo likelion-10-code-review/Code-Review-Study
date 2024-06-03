@@ -1,0 +1,23 @@
+/* -------------------------------------------------------------------------- */
+/*                                   페이지 전환                                   */
+/* -------------------------------------------------------------------------- */
+
+.page-transition {
+  position: absolute;
+  bottom: var(--large-spacing);
+  left: var(--large-spacing);
+  color: var(--white);
+}
+
+.text-more {
+  font-size: var(--x-small-text);
+  font-weight: bold;
+}
+
+.icon-arrow {
+  margin-right: var(--small-spacing);
+  font-size: var(--base-text);
+  vertical-align: bottom;
+}
+
+/* 파일이 삭제된 이유에 대해 알고 싶습니다.. */

@@ -1,0 +1,17 @@
+@import "variables";
+
+@mixin btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  @include text-cap;
+}
+
+.btn {
+  @include btn;
+
+  &-submit {
+    background-color: $main-color;
+    box-shadow: 0 0 5px rgba($main-color, 0.5);
+    color: $white;
+  }
+}
