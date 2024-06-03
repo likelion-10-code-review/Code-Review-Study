@@ -8,48 +8,66 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
+    <!-- 테스트 -->
     <title>login</title>
   </head>
   <body>
     <div class="signup_page">
-      <div class="signup_left">
+      <!-- 헤더 -->
+      <header>
         <h1>Destiny</h1>
+        <button>
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+
+      <!-- 문구 -->
+      <aside>
         <h3>Let's Kick Now!</h3>
         <p>It's Easy and takes less then 30 seconds.</p>
-        <button class="btn-backhome">
-          <i class="fas fa-angle-left">home</i>
-        </button>
-      </div>
+      </aside>
+
+      <!-- 폼 컨테이너 -->
       <div class="formContainer">
-        <h2>SIGN UP</h2>
+        <!-- 입력 폼 -->
         <form action="/">
+          <h2>SIGN UP</h2>
+          <!-- 이름 입력 -->
           <div class="NameForm">
             Name <i class="inputicon fas fa-user"></i><br />
             <input type="text" id="inputName" />
             <label for="inputName"></label>
           </div>
+          <!-- 이메일 입력 -->
           <div class="EmailForm">
             Email <i class="inputicon fas fa-envelope"></i><br />
             <input type="email" id="inputEmail" />
             <label for="inputEmail"></label>
           </div>
+          <!-- 패스워드 입력 -->
           <div class="PwForm">
             Password <i class="inputicon fas fa-lock"></i><br />
             <input type="password" id="inputPassword" />
             <label for="inputPassword"></label>
           </div>
+          <!-- 버튼 -->
           <button>Get Started</button>
+          <!-- 로그인 링크 -->
+          <span>Have an account?<a href="">Sign in</a></span>
         </form>
-        <link>Have an account? <a href="">Sign in</a></p>
       </div>
-      <div class="signup_right">
-        <button>
-          <i class="fas fa-bars"></i>
+
+      <!-- 푸터 -->
+      <footer>
+        <!-- home 버튼 -->
+        <button class="btn-backhome">
+          <i class="fas fa-angle-left">home</i>
         </button>
+        <!-- 저작권 -->
         <p>
           <i class="fas fa-copyright">Copyright 2020</i>
         </p>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
