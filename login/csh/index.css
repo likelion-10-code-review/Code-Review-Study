@@ -15,6 +15,7 @@
   --singup-title-color: #868686;
   --login-icon-color: #868686;
   --inputbox-line-color: #d6d6d6;
+  --signin-link-color: #f73d4a;
 
   /* 푸터 변수 */
   --home-button-color: #ffffff;
@@ -97,6 +98,11 @@ header {
   color: var(--message-color);
 }
 
+.message-big-font{
+  font-size: 1.5rem; 
+  font-weight: bold
+}
+
 /* 로그인 폼 */
 form {
   background-color: var(--login-bg-color);
@@ -162,12 +168,18 @@ form,
   font-size: 1rem;
   color: var(--button-font-color);
   box-shadow: 0px 0px 4px #807f7f;
+
 }
 
 .sign-in-link {
   font-size: 0.8rem;
   text-align: center;
+
+  a{
+   color: var( --signin-link-color);
+  }
 }
+
 
 /* 푸터 */
 .footer-group {

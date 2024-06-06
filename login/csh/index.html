@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>login</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -21,11 +21,11 @@
       </header>
       <!-- 중간 메세지 -->
       <div role="group" class="message-center">
-        <p style="font-size: 1.5rem; font-weight: bold">Let's Kick Now !</p>
+        <p class="message-big-font" >Let's Kick Now !</p>
         <p>It's Easy and take less than 30 seconds.</p>
       </div>
       <!-- 로그인 폼 -->
-      <form action="post" name="login-form">
+      <form action="" method="post" name="login-form">
         <fieldset class="login-input-group">
           <legend class="signup-title">SIGN UP</legend>
           <div class="input-box-wrapper">
@@ -45,7 +45,9 @@
           </div>
         </fieldset>
         <button type="submit" class="login-button">Get Started</button>
-        <span class="sign-in-link"></span>
+        <span class="sign-in-link">Have an account?
+          <a href="/">Sign In</a>
+          </span >
       </form>
       <!-- 하단 -->
       <footer class="footer-group">
