@@ -17,7 +17,7 @@
       <!-- 상단 -->
       <header>
         <h1>Destiny</h1>
-        <span class="fas fa-bars menu-icon"></span>
+        <span class="menu-icon fas fa-bars"></span>
       </header>
       <!-- 중간 메세지 -->
       <div role="group" class="message-center">
@@ -30,48 +30,29 @@
           <legend class="signup-title">SIGN UP</legend>
           <div class="input-box-wrapper">
             <label for="user-name" class="sr-only">Name</label>
-            <input
-              type="text"
-              id="user-name"
-              placeholder="Name"
-              required
-              class="login-inputbox" />
-            <span class="fas fa-user"></span>
+            <input type="text" id="user-name" placeholder="Name" required class="login-inputbox" />
+            <span class="fas fa-user login-icon"></span>
           </div>
           <div class="input-box-wrapper">
             <label for="user-email" class="sr-only">Email</label>
-            <input
-              type="email"
-              id="user-email"
-              placeholder="Email"
-              required
-              class="login-inputbox" />
-            <span class="fas fa-envelope"></span>
+            <input type="email" id="user-email" placeholder="Email" required class="login-inputbox" />
+            <span class="fas fa-envelope login-icon"></span>
           </div>
           <div class="input-box-wrapper">
             <label for="pwd" class="sr-only">Password</label>
-            <input
-              type="password"
-              id="pwd"
-              placeholder="Password"
-              required
-              class="login-inputbox" />
-            <span class="fas fa-lock"></span>
+            <input type="password" id="pwd" placeholder="Password" required class="login-inputbox" />
+            <span class="fas fa-lock login-icon"></span>
           </div>
         </fieldset>
         <button type="submit" class="login-button">Get Started</button>
-        <span class="sign-in-link"
-          >Have an account?<a href="/" style="color: var(--main-color)">
-            Sign In</a
-          ></span
-        >
+        <span class="sign-in-link"></span>
       </form>
       <!-- 하단 -->
       <footer class="footer-group">
-        <a href="/"
-          ><span class="fas fa-angle-left home-color"></span
-          ><span class="home-font home-color">HOME</span></a
-        >
+        <a class="home-button" href="/">
+          <span class="fas fa-angle-left home-color"></span>
+          <span class="home-font home-color">HOME</span>
+        </a>
       </footer>
     </section>
   </body>

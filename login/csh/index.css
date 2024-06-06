@@ -1,8 +1,23 @@
 :root {
-  --main-color: #f73d4a;
-  --white-color: #ffffff;
-  --gray-color: #868686;
-  --lightgray-color: #d6d6d6;
+  /* 배경 변수 */
+  --background-color-red: #f73d4a;
+  --background-color-white: #ffffff;
+  --message-color: #ffffff;
+
+  /* 헤더 변수 */
+  --menu-icon-color: #f73d4a;
+  --logo-color: #ffffff;
+
+  /* 로그인 박스 변수 */
+  --login-button-color: #f73d4a;
+  --login-bg-color: #ffffff;
+  --button-font-color: #ffffff;
+  --singup-title-color: #868686;
+  --login-icon-color: #868686;
+  --inputbox-line-color: #d6d6d6;
+
+  /* 푸터 변수 */
+  --home-button-color: #ffffff;
 }
 
 /* 기본 마진값 초기화 */
@@ -48,8 +63,8 @@ input {
   position: relative;
   background-image: linear-gradient(
     to right,
-    var(--main-color) 50%,
-    var(--white-color) 50%
+    var(--background-color-red) 50%,
+    var(--background-color-white) 50%
   );
   box-shadow: 3px 3px 10px #b8b8b8;
 }
@@ -64,12 +79,13 @@ header {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  color: var(--white-color);
-}
-
-.menu-icon {
-  font-size: 1.5rem;
-  color: var(--main-color);
+  h1 {
+    color: var(--logo-color);
+  }
+  .menu-icon {
+    font-size: 1.5rem;
+    color: var(--menu-icon-color);
+  }
 }
 
 /* 중간 메세지 */
@@ -78,12 +94,12 @@ header {
   top: 50%;
   transform: translate(30px, -50%);
   font-size: 0.8rem;
-  color: var(--white-color);
+  color: var(--message-color);
 }
 
 /* 로그인 폼 */
 form {
-  background-color: var(--white-color);
+  background-color: var(--login-bg-color);
   width: 24rem;
   height: 30rem;
   border-radius: 2rem;
@@ -91,12 +107,10 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 2.5rem;
   box-shadow: 2px 0px 7px #b3b3b3;
 }
 
+form,
 .login-input-group {
   display: flex;
   flex-flow: column nowrap;
@@ -108,8 +122,8 @@ form {
   width: 100%;
   font-size: 1.2rem;
   text-align: center;
-  padding: 2rem 0 3rem 0;
-  color: var(--gray-color);
+  padding: 2rem 0 3rem;
+  color: var(--singup-title-color);
   position: relative;
 }
 
@@ -125,14 +139,14 @@ form {
 }
 
 .input-box-wrapper {
-  border-bottom: 1px solid var(--lightgray-color);
+  border-bottom: 1px solid var(--inputbox-line-color);
   padding: 0.5rem 0;
   margin: 0;
   margin: 0 1.5rem;
 }
 
-.fas {
-  color: var(--gray-color);
+.login-icon {
+  color: var(--login-icon-color);
 }
 
 .login-inputbox {
@@ -144,9 +158,9 @@ form {
   margin: 0 1rem;
   height: 3rem;
   border-radius: 20rem;
-  background-color: var(--main-color);
+  background-color: var(--login-button-color);
   font-size: 1rem;
-  color: var(--white-color);
+  color: var(--button-font-color);
   box-shadow: 0px 0px 4px #807f7f;
 }
 
@@ -155,10 +169,15 @@ form {
   text-align: center;
 }
 
+/* 푸터 */
 .footer-group {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
+}
+
+.home-button {
+  color: var(--home-button-color);
 }
 
 .home-font {
@@ -168,6 +187,4 @@ form {
   font-weight: 700;
 }
 
-.home-color {
-  color: var(--white-color);
-}
+
