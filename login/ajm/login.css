@@ -1,26 +1,53 @@
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+:root {
+  --margin-left: 1.5rem;
+  --margin-right: 1.5rem;
+  --main-color: #f93f4c;
 }
 
+header,
+aside,
+footer {
+  margin-left: var(--margin-left);
+  margin-right: var(--margin-right);
+}
+
+header,
+aside,
+footer button,
+.formContainer button {
+  color: #ffffff;
+}
+
+body {
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+/* 헤더 */
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+/* 헤더-메뉴버튼 */
 header button {
   border: none;
   background-color: transparent;
+  color: var(--main-color);
 }
-
-aside {
+/* 문구 */
+aside{
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  h3, p{
+    margin: 0;
+  }
 }
+/* 전체 페이지 */
 .signup_page {
   display: flex;
   flex-direction: column;
@@ -28,15 +55,16 @@ aside {
   position: relative;
   border-radius: 30px;
   box-shadow: 0 3px 2px rgb(208, 208, 208);
-  background: linear-gradient(to right, #f93f4c 50%, #ffffff 50%);
+  background: linear-gradient(to right, var(--main-color) 50%, #ffffff 50%);
 }
-
+/* 폼 컨테이너 */
 .formContainer {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* 입력 폼 */
 .formContainer form {
   display: flex;
   flex-flow: column;
@@ -47,23 +75,35 @@ aside {
   box-shadow: 0 0 10px;
   padding: 30px;
 }
+/* 입력 박스 */
 .formContainer input {
-  width: 100%;
   border: none;
   box-shadow: inset 0 3px 2px rgb(208, 208, 208);
-  margin-bottom: 10px;
+  margin-bottom: 1.25rem;
+}
+/* 시작 버튼 */
+.formContainer button {
+  border: none;
+  width: 100%;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  padding: 10px;
+}
+.formContainer span {
+  margin-top: 1rem;
+  a {
+    text-decoration-line: none;
+    color: var(--main-color);
+  }
 }
 
-
-
-
-
+/* 푸터 */
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+/* 푸터-버튼 */
 footer button {
   border: none;
   background-color: transparent;
