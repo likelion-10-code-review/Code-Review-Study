@@ -23,7 +23,7 @@
   padding: 0;
   border: none;
   font-size: var(--medium-text);
-  background: none;
+  background: transparent;
   color: var(--pink-400);
   cursor: pointer;
 }
