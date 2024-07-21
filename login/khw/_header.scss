@@ -1,0 +1,41 @@
+header {
+  width: 100%;
+  @include flex-sb;
+}
+header {
+  button {
+    background-color: transparent;
+
+    i {
+      color: $main-color;
+    }
+  }
+}
+.sign-up {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 150px);
+  top: 20%;
+  flex-direction: column;
+  width: 300px;
+  background-color: $white;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba($black, 0.15);
+  padding: 2rem;
+  text-align: center;
+
+  h1 {
+    &::after {
+      content: "";
+      display: block;
+      margin: 1rem auto 2rem;
+      width: 10%;
+      border-bottom: 1px solid $main-color;
+      z-index: 10;
+    }
+  }
+  .login-trf {
+    @include txt-sm;
+    margin-top: 2rem;
+  }
+}
