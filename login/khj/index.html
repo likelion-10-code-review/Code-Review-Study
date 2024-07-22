@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/base/normalize.css" />
+    <link rel="stylesheet" href="./styles/base/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <header>
+        <h1>
+          <a href="#">
+            Destiny
+          </a>
+        </h1>
+        <button class="menu-button" type="button" aria-label="menu">
+          <span class="fa-solid fa-bars" aria-hidden="true"></span>
+        </button>
+      </header>
+      <p class="desc">
+        Let's Kick Now !
+        <span>It's Easy and takes less than 30 seconds.</span>
+      </p>
+      <form action="" class="login-form">
+        <h2>sign up</h2>
+
+        <div class="login-form-input input-name">
+          <label for="name" class="sr-only">name</label>
+          <input type="text" id="name" placeholder="Name" />
+          <span class="fa-regular fa-user" aria-hidden="true"></span>
+        </div>
+        <div class="login-form-input input-email">
+          <label for="email" class="sr-only">email</label>
+          <input type="email" id="email" placeholder="Email" />
+          <span class="fa-regular fa-envelope" aria-hidden="true"></span>
+        </div>
+        <div class="login-form-input input-password">
+          <label for="password" class="sr-only">password</label>
+          <input type="password" id="password" placeholder="password" />
+          <span class="fa-solid fa-lock" aria-hidden="true"></span>
+        </div>
+        <span class="sign">Have an account? <a href="#">Sign In</a></span>
+        <button type="submit">Get Started</button>
+      </form>
+      <footer>
+        <a class="home" href="#" aria-label="홈으로 이동">
+          <span class="fa-solid fa-angle-left" aria-hidden="true"></span>
+          home
+        </a>
+        <p class="copyright"><span class="fa-regular fa-copyright" aria-hidden="true"></span>Copyright 2016.</p>  
+      </footer>
+    </main>
+  </body>
 </html>
