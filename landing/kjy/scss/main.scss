@@ -1,0 +1,34 @@
+@use 'reset' as *;
+@use 'card' as *;
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+
+main {
+  width: 90%;
+  background-color: pink;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  // 수정 필요
+  gap: 10px;
+  width: 90%;
+
+}
+

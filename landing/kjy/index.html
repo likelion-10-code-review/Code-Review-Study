@@ -3,7 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>le collectionist</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>
+        <a href="/">
+          le collectionist
+        </a>
+      </h1>
+      <form class="header__search" action="#" method="POST">
+        <label class="search__label" for="headerSearch"></label>
+        <input type="search" id="headerSearch" class="search__input" placeholder="FIND A DESTICATION" />
+      </form>
+      <nav>
+        <ul>
+          <li>
+            <button type="button">NOS DEMEURES</button>
+            <ul style="display: none;">
+              <li>
+                <a href="/">MENU-A</a>
+              </li>
+              <li>
+                <a href="/">MENU-B</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/">CONNEXION</a>
+          </li>
+          <li>
+            <a href="/">INSCRIPTION</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>
+          <span>BEAUTIFUL</span>
+          <span>vacation moments.</span>
+        </h2>
+        <p>We offer exceptional houses and experiences</p>
+        <div>
+          <!-- 검색 -->
+        </div>
+      </section>
+
+      <section class="card__container">
+        <h3>
+          <span>Discover</span> our best experiences.
+        </h3>
+      
+        <div class="card__wrapper">
+          <figure class="card wild">
+            <img src="./assets/card-image.webp" alt="" />
+            <figcaption>
+              <p>wild Ibiza</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at dicta ipsa ab repellendus.</span>
+            <a href="/">
+              <span>DISCOVER</span><span>&#8594;</span>
+            </a>
+            </figcaption>
+          </figure>
+          <!-- <figure class="card">
+            <img src="./assets/card-image.webp" alt="" />
+            <figcaption>
+              <p>222222</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at dicta ipsa ab repellendus.</span>
+            <a href="/">
+              <span>DISCOVER</span><span>&#8594;</span>
+            </a>
+            </figcaption>
+          </figure> -->
+        </div>
+
+        <!-- 버튼 -->
+        <a href="/">
+          MORE DESTINATIONS
+        </a>
+      </section>
+    </main>
+
+    <aside>
+      <span>112 LOCATIONS</span>
+      <span>Spain</span>
+      <span>&#8594;</span>
+    </aside>
+
+
+  </body>
 </html>
