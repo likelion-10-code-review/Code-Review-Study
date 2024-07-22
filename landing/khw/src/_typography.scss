@@ -1,0 +1,13 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@mixin font($fz, $fc: #000, $lh: 150%, $fw: 400, $ff: Pretendard) {
+  font-size: $fz;
+  color: $fc;
+  line-height: $lh;
+  font-weight: $fw;
+  font-family: $ff;
+}
+
+h1 {
+  @include font($fz: 60px, $fw: 200);
+}

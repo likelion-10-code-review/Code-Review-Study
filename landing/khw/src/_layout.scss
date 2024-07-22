@@ -1,0 +1,21 @@
+main {
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1720872615464-ce2d6f969d1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: 50%;
+}
+
+.container {
+  &__top {
+    margin: 0 120px;
+    padding: 0 60px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__middle {
+    margin: 0 120px;
+    padding: 30px;
+    background-color: $white;
+  }
+}
