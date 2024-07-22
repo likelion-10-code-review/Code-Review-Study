@@ -176,6 +176,10 @@ h1 {
   font-family: Pretendard;
 }
 
+.input__select {
+  background-color: transparent;
+}
+
 body {
   font-size: 16px;
 }
