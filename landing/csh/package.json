@@ -1,0 +1,16 @@
+{
+  "name": "landing-csh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass styles/style.scss styles/style.css",
+    "watch": "sass --watch styles/style.scss:styles/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "swiper": "^11.1.5"
+  }
+}

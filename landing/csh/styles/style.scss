@@ -1,0 +1,384 @@
+@import "./assets/reset.scss";
+@import "./assets/sr-only.scss";
+@import "./assets/mixins.scss";
+body {
+  background-color: #f2f4f6;
+}
+
+h3 {
+  @include font(2.5rem, 300, 100%);
+}
+
+header {
+  .header {
+    &__top {
+      @include flexAll(row, space-between, center, 0);
+      height: 66px;
+      margin: 10px 0 40px 0;
+      padding: 0 70px;
+
+      h1 {
+        @include font(2.125rem, 600);
+        margin-right: 200px;
+      }
+
+      .find-destination {
+        &__container {
+          margin-right: 110px;
+          @include size(200px, 20px);
+          @include flexAll(row, space-between, center, 3px);
+          button {
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          input {
+            @include size(170px, 20px);
+            @include font(0.875rem, 600);
+            background-color: inherit;
+            border: none;
+            &:focus {
+              outline: 1.5px solid gray;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+      .nav {
+        &__container {
+          @include font(0.875rem, 700);
+          @include flexAll(row, center, space-evenly, 30px);
+        }
+      }
+    }
+  }
+
+  .header__center {
+    height: 150px;
+    margin-left: 180px;
+    margin-bottom: 60px;
+
+    .slogan {
+      &__main {
+        height: 110px;
+        @include flexAll(column, center, space-evenly, 0);
+        @include font(3.125rem, 300, 100%);
+        margin-bottom: 25px;
+      }
+      &__sub {
+        @include font(1rem, 400, 100%);
+
+        &::before {
+          content: "";
+          border-left: 3px solid rgb(88, 88, 253);
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+  .header__bottom {
+    height: 60px;
+    margin: 0 0 80px 180px;
+    @include flexAll(row, space-between, center, 0);
+  }
+  .search {
+    &__container {
+      @include size(670px, 58px);
+      @include flexAll(row, space-between, center, 0);
+    }
+    &__where {
+      &__label {
+        padding: 7px 5px 0 10px;
+        @include size(240px, 70px);
+        @include flexAll(column, center, right, 0);
+        @include font(0.8rem, 400, 100%);
+        background-color: white;
+      }
+      &__input {
+        height: 30px;
+        border: none;
+      }
+    }
+    &__date {
+      &__label {
+        padding: 7px 5px 0 10px;
+        @include size(240px, 70px);
+        @include flexAll(column, center, right, 0);
+        @include font(0.8rem, 400, 100%);
+        background-color: white;
+      }
+      &__input {
+        height: 30px;
+        border: none;
+      }
+    }
+    &__guest {
+      &__label {
+        padding: 7px 5px 0 10px;
+        @include size(90px, 70px);
+        @include flexAll(column, center, right, 0);
+        @include font(0.8rem, 400, 100%);
+        background-color: white;
+      }
+      &__input {
+        height: 30px;
+        border: none;
+      }
+    }
+    &__button {
+      @include size(70px, 70px);
+      background-color: #3753dd;
+      color: white;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .location-button {
+    @include size(140px, 50px);
+    border-top: 3px solid black;
+    padding: 15px;
+    @include flexAll(row, space-between, center, 0);
+    @include font(0.7rem, 400, 100%);
+    &__left {
+      @include flexAll(column, center, end, 0);
+      :nth-child(1) {
+        font-weight: 700;
+      }
+      :nth-child(3) {
+        font-weight: 700;
+      }
+    }
+    &__right {
+      border-radius: 50%;
+      border: 1px solid black;
+      @include size(22px, 22px);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.discover {
+  &__container {
+    @include size(85%, auto);
+    background-color: white;
+    margin: 0 auto;
+    padding: 0 165px 0 76px;
+    @include flexAll(row, space-between, center, 0);
+    flex-wrap: wrap;
+  }
+  &__title {
+    @include size(100%, 60px);
+    margin: 80px 0 50px 0;
+  }
+  &__item {
+    @include size(400px, 250px);
+    @include flexAll(row, space-between, center, 33px);
+    margin: 20px;
+
+    &__img {
+      @include size(170px, 100%);
+    }
+    &__contents {
+      @include flexAll(column, center, start, 0);
+      :nth-child(1) {
+        @include font(1.6rem, 400, 100%);
+        margin-bottom: 20px;
+      }
+      :nth-child(2) {
+        @include font(0.8rem, 400, 150%);
+        margin-bottom: 30px;
+      }
+      :nth-child(3) {
+        @include font(0.7rem, 700, 150%);
+        color: #3753dd;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__button {
+    @include size(190px, 55px);
+    margin: 0 100px;
+    margin: 70px auto;
+    background-color: #3753dd;
+    color: white;
+    border-radius: 3px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+// #f8f7fa
+
+.commitments {
+  &__container {
+    @include size(85%, 500px);
+    background-color: #f8f7fa;
+    margin-left: auto;
+    padding-left: 60px;
+    @include flexAll(column, space-evenly, left, 0);
+    &__title {
+      height: 70px;
+      width: 100%;
+
+      @include flexAll(row, left, center, 0);
+    }
+    position: relative;
+  }
+  &__contents {
+    @include flexAll(row, space-between, center, 0);
+    width: 700px;
+
+    &__item {
+      @include flexAll(column, space-between, left, 0);
+      @include size(210px, 230px);
+      :nth-child(1) {
+        font-size: 55px;
+        margin-bottom: 15px;
+      }
+
+      :nth-child(2) {
+        @include font(1rem, 700, 100%);
+        &::after {
+          content: "";
+          border-right: 3px solid rgb(88, 88, 253);
+          padding-left: 6px;
+          margin-bottom: 15px;
+        }
+      }
+      :nth-child(3) {
+        @include font(0.85rem, 300, 150%);
+      }
+    }
+  }
+  &__img {
+    @include size(400px, 560px);
+    position: absolute;
+    right: 0;
+    top: 90px;
+  }
+}
+
+.concept {
+  &__container {
+    @include size(720px, 250px);
+    margin-top: 60px;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    padding: 40px;
+    @include flexAll(column, space-around, left, 0);
+    :nth-child(2) {
+      @include font(1rem, 300, 170%);
+      width: 420px;
+    }
+  }
+  &__title {
+  }
+}
+
+.press-awards__container {
+  @include size(85%, 750px);
+  @include flexAll(row, space-between, center, 0);
+  background-color: #121a44;
+  margin-top: 250px;
+  padding: 90px 110px 80px 100px;
+  position: relative;
+  &__press {
+    @include size(500px, 470px);
+    @include flexAll(column, space-between, start, 0);
+    color: rgb(229, 229, 229);
+    .press {
+      &__contents {
+        padding-left: 170px;
+        :nth-child(1) {
+          @include font(1rem, 700, 170%);
+        }
+        :nth-child(2) {
+          @include font(0.75rem, 500, 170%);
+          color: gray;
+        }
+        :nth-child(3) {
+          @include font(0.75rem, 500, 170%);
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+  &__awards {
+    @include size(400px, 470px);
+    @include flexAll(column, space-between, start, 0);
+    .awards {
+      &__contents {
+        @include size(400px, 400px);
+        @include flexAll(row, space-between, end, 0);
+        flex-wrap: wrap;
+      }
+      &__title {
+        color: rgb(229, 229, 229);
+      }
+      &__item {
+        @include size(180px, 120px);
+        // border: 1px solid blue;
+        :nth-child(1) {
+          @include size(70%, 60px);
+        }
+
+        :nth-child(2) {
+          @include font(0.75rem, 500, 100%);
+          color: gray;
+        }
+      }
+    }
+  }
+  .press-awards__img {
+    @include size(220px, 580px);
+    position: absolute;
+    top: 240px;
+    left: 0;
+  }
+}
+
+.customers {
+  &__container {
+    @include size(100%, 800px);
+    margin-top: 90px;
+
+    .swiper-wrapper {
+      margin-top: 90px;
+      @include flexAll(row, center, center, 200px);
+      overflow: hidden;
+
+      .swiper-slide {
+        @include size(380px, 850px);
+        @include flexAll(column, space-between, center, 0);
+        flex-shrink: 0;
+        :nth-child(1) {
+          @include size(100%, 500px);
+        }
+        :nth-child(2) {
+          margin-top: 30px;
+          @include font(1rem, 600, 160%);
+          color: gray;
+          text-align: center;
+        }
+        :nth-child(3) {
+          @include font(1rem, 600, 160%);
+          color: rgb(75, 74, 74);
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin: 20px auto;
+    @include size(700px, 45px);
+    text-align: center;
+  }
+}
