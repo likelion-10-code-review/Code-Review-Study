@@ -6,24 +6,25 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: var(--small-spacing);
   margin-top: var(--large-spacing);
   border-bottom: 1px solid var(--gray-200);
   font-size: var(--small-text);
 
+
   input {
     width: 100%;
     border: none;
-    background: none;
+    background: transparent;
+    outline-offset: var(--small-spacing);
+    outline-color: var(--pink-400);
+    cursor: pointer;
   }
 
   input::placeholder {
     color: var(--black);
   }
-
-  label {
-    span {
-      vertical-align: bottom;
-    }
-  }
 }
+
+/* 파일이 삭제된 이유에 대해 알고 싶습니다.. */
