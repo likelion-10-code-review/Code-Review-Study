@@ -1,8 +1,17 @@
 {
   "scripts": {
-    "dev": "live-server src --port=4500 --host=localhost"
+    "dev": "live-server src --port=4500 --host=localhost",
+    "sass": "sass --watch landing/khj/styles/styles.scss landing/khj/styles.css"
   },
   "dependencies": {
-    "live-server": "^1.2.2"
-  }
+    "live-server": "^1.2.2",
+    "sass": "^1.77.8"
+  },
+  "name": "code-review-study",
+  "description": "이 프로젝트는 코드 리뷰를 통해 서로의 코딩 역량을 향상시키고, 더 나은 코드 품질을 추구하는 스터디 그룹입니다. <br>이 스터디는 각자의 코드에 대해 피드백을 주고받으며, 다양한 관점에서 코드를 개선할 수 있는 기회를 제공합니다. <br>본 레포지토리는 HTML, CSS, SASS, JavaScript등의 기술을 포함하여 프로젝트의 전반적인 내용을 다룹니다.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
