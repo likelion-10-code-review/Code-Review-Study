@@ -1,0 +1,18 @@
+@mixin flexAll($fd, $jc, $ai, $gp) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gp;
+}
+
+@mixin font($fs: 16px, $fw: 400, $lh: 120%) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}

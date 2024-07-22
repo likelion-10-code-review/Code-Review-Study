@@ -3,7 +3,343 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>landing</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="header__top">
+        <h1>le collectionist</h1>
+        <div class="find-destination__container">
+          <button type="button" class="fa-solid fa-magnifying-glass"></button>
+          <input
+            type="text"
+            id="findDestination"
+            placeholder="FIND A DESTINATION" />
+          <label for="findDestination" class="sr-only"
+            >search destination</label
+          >
+        </div>
+        <ul class="nav__container">
+          <li>NOS DEMEURES <button class="fas fa-angle-down"></button></li>
+          <li>CONNEXION</li>
+          <li>INSCRIPTION</li>
+        </ul>
+      </nav>
+      <!-- 슬로건 문구 -->
+      <div class="header__center">
+        <h2 class="slogan__main">
+          <strong>Beautiful</strong>
+          <span>vacation moments.</span>
+        </h2>
+        <p class="slogan__sub">We offer exceptional houses and experiences</p>
+      </div>
+      <!-- 검색영역 -->
+      <div class="header__bottom">
+        <form action="submit" class="search__container">
+          <label for="setDestination" class="search__where__label">
+            WHERE ?
+            <input
+              type="text"
+              id="searchDestination"
+              placeholder="Your Destination"
+              class="search__where__input" />
+            <button type="button"></button>
+          </label>
+          <label for="setDate" class="search__date__label"
+            >DATE
+            <input
+              type="text"
+              id="setDate"
+              placeholder="Thu. 26/1/17   -   Fri 30/1/17"
+              class="search__date__input" />
+          </label>
+          <label for="setGuest" class="search__guest__label"
+            >GUEST
+            <input
+              type="text"
+              id="setGuest"
+              placeholder="01"
+              class="search__guest__input" />
+          </label>
+          <button
+            type="button"
+            class="search__button fas fa-arrow-right"></button>
+        </form>
+        <!-- 화면 오른쪽 버튼 -->
+        <div class="location-button">
+          <div class="location-button__left">
+            <span>112 LOCATIONS</span>
+            <span>Spain</span>
+          </div>
+          <button
+            type="button"
+            class="location-button__right fas fa-arrow-right"></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Discover 영역 -->
+    <section class="discover__container">
+      <h3 class="discover__title">
+        <strong>Discover</strong> our best<br />
+        experiences.
+      </h3>
+      <article class="discover__item">
+        <img
+          src="https://picsum.photos/id/237/170/250"
+          alt=""
+          class="discover__item__img" />
+        <div class="discover__item__contents">
+          <h4>wild ibiza</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+            provident quidem atque corrupti laboriosam recusandae facilis,
+          </p>
+          <button type="button">DISCOVER</button>
+        </div>
+      </article>
+      <article class="discover__item">
+        <img
+          src="https://picsum.photos/id/28/170/250"
+          alt=""
+          class="discover__item__img" />
+        <div class="discover__item__contents">
+          <h4>wild ibiza</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+            provident quidem atque corrupti laboriosam recusandae facilis,
+          </p>
+          <button type="button">DISCOVER</button>
+        </div>
+      </article>
+      <article class="discover__item">
+        <img
+          src="https://picsum.photos/id/29/170/250"
+          alt=""
+          class="discover__item__img" />
+        <div class="discover__item__contents">
+          <h4>wild ibiza</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+            provident quidem atque corrupti laboriosam recusandae facilis,
+          </p>
+          <button type="button">DISCOVER</button>
+        </div>
+      </article>
+      <article class="discover__item">
+        <img
+          src="https://picsum.photos/id/42/170/250"
+          alt=""
+          class="discover__item__img" />
+        <div class="discover__item__contents">
+          <h4>wild ibiza</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+            provident quidem atque corrupti laboriosam recusandae facilis,
+          </p>
+          <button type="button">DISCOVER</button>
+        </div>
+      </article>
+      <article class="discover__item">
+        <img
+          src="https://picsum.photos/id/40/170/250"
+          alt=""
+          class="discover__item__img" />
+        <div class="discover__item__contents">
+          <h4>wild ibiza</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+            provident quidem atque corrupti laboriosam recusandae facilis,
+          </p>
+          <button type="button">DISCOVER</button>
+        </div>
+      </article>
+      <article class="discover__item">
+        <img
+          src="https://picsum.photos/id/49/170/250"
+          alt=""
+          class="discover__item__img" />
+        <div class="discover__item__contents">
+          <h4>wild ibiza</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+            provident quidem atque corrupti laboriosam recusandae facilis,
+          </p>
+          <button type="button">DISCOVER</button>
+        </div>
+      </article>
+      <button class="discover__button">MORE DESTINATION</button>
+    </section>
+
+    <!-- Our commitments 섹션 -->
+    <section class="commitments__container">
+      <h3 class="commitments__title"><strong>Our</strong> commitments.</h3>
+      <div class="commitments__contents">
+        <article class="commitments__contents__item">
+          <div>
+            <span class="fa-solid fa-house"></span>
+          </div>
+          <h4>Exceoptional houses</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
+            odio. Reiciendis dignissimos, rerum tempore autem debitis fugiat
+            doloribus,
+          </p>
+        </article>
+        <article class="commitments__contents__item">
+          <div>
+            <span class="fa-solid fa-headset"></span>
+          </div>
+          <h4>Advice and support</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
+            odio. Reiciendis dignissimos, rerum tempore autem debitis fugiat
+            doloribus,
+          </p>
+        </article>
+        <article class="commitments__contents__item">
+          <div>
+            <span class="fa-solid fa-earth-americas"></span>
+          </div>
+          <h4>Original experiences</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
+            odio. Reiciendis dignissimos, rerum tempore autem debitis fugiat
+            doloribus,
+          </p>
+        </article>
+      </div>
+      <img
+        src="https://picsum.photos/id/445/500/560"
+        alt=""
+        class="commitments__img" />
+    </section>
+    <!-- The Concept -->
+    <section class="concept__container">
+      <h3 class="concept__title"><strong>The</strong> Concept</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam libero
+        mollitia accusamus dignissimos, ipsa quis sequi magnam, atque laboriosam
+        nesciunt nostrum cum possimus ipsam soluta maiores dolorem ea ducimus.
+        Eum.
+      </p>
+    </section>
+    <!-- Press Awards 그룹핑-->
+    <div class="press-awards__container">
+      <section class="press-awards__container__press">
+        <h3 class="press__title"><strong>Our</strong> Press.</h3>
+        <div class="press__contents">
+          <p>I'm the headline of this press release</p>
+          <span>September 23, 2016</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            cumque alias quia similique est odio. Unde officia voluptatem
+            quisquam eligendi ratione dolorem distinctio labore consequatur!
+            Quidem mollitia consequuntur blanditiis numquam!
+          </p>
+          <button type="button"></button>
+        </div>
+        <div class="press__contents">
+          <p>I'm the headline of this press release</p>
+          <span>September 23, 2016</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            cumque alias quia similique est odio. Unde officia voluptatem
+            quisquam eligendi ratione dolorem distinctio labore consequatur!
+            Quidem mollitia consequuntur blanditiis numquam!
+          </p>
+          <button type="button"></button>
+        </div>
+      </section>
+      <section class="press-awards__container__awards">
+        <h3 class="awards__title"><strong>Our</strong> Awards.</h3>
+        <div class="awards__contents">
+          <div class="awards__item">
+            <img src="./styles/assets/images/netflix-3.svg" alt="" />
+            <span>september 23, 2016</span>
+          </div>
+          <div class="awards__item">
+            <img src="./styles/assets/images/tinder-1.svg" alt="" />
+            <span>september 23, 2016</span>
+          </div>
+          <div class="awards__item">
+            <img src="./styles/assets/images/vine.svg" alt="" />
+            <span>september 23, 2016</span>
+          </div>
+          <div class="awards__item">
+            <img src="./styles/assets/images/netflix-3.svg" alt="" />
+            <span>september 23, 2016</span>
+          </div>
+          <div class="awards__item">
+            <img src="./styles/assets/images/tinder-1.svg" alt="" />
+            <span>september 23, 2016</span>
+          </div>
+          <div class="awards__item">
+            <img src="./styles/assets/images/vine.svg" alt="" />
+            <span>september 23, 2016</span>
+          </div>
+        </div>
+      </section>
+      <img
+        src="https://picsum.photos/id/442/230/480"
+        alt=""
+        class="press-awards__img" />
+    </div>
+
+    <!-- Customers Testimonials 영역 -->
+    <section class="customers__container swiper">
+      <h3 class="customers__title"><strong>Customers</strong> Testimonials.</h3>
+      <div class="swiper-wrapper">
+        <article class="swiper-slide">
+          <img src="https://picsum.photos/id/18/450/600" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Culpa officiis hic esse dolores molestias <br />aut provident cumque
+            mollitia ut neque, deleniti, deserunt excepturi. Ad nemo neque quae
+            numquam sunt cum.
+          </p>
+          <i>Marine Legrand</i>
+        </article>
+        <article class="swiper-slide">
+          <img src="https://picsum.photos/id/437/450/600" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Culpa officiis hic esse dolores molestias <br />aut provident cumque
+            mollitia ut neque, deleniti, deserunt excepturi. Ad nemo neque quae
+            numquam sunt cum.
+          </p>
+          <i>Marine Legrand</i>
+        </article>
+        <article class="swiper-slide">
+          <img src="https://picsum.photos/id/337/450/600" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Culpa officiis hic esse dolores molestias <br />aut provident cumque
+            mollitia ut neque, deleniti, deserunt excepturi. Ad nemo neque quae
+            numquam sunt cum.
+          </p>
+          <i>Marine Legrand</i>
+        </article>
+        <article class="swiper-slide">
+          <img src="https://picsum.photos/id/767/450/600" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            officiis hic esse dolores molestias aut provident cumque mollitia ut
+            neque, deleniti, deserunt excepturi. Ad nemo neque quae numquam sunt
+            cum.
+          </p>
+          <i>Marine Legrand</i>
+        </article>
+      </div>
+      <button type="button"></button>
+      <button type="button"></button>
+    </section>
+  </body>
 </html>
