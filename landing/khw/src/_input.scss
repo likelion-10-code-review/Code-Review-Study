@@ -2,4 +2,12 @@
   &__select {
     background-color: transparent;
   }
+  &__search {
+    background-color: transparent;
+    border: 0;
+
+    &::placeholder {
+      color: $black;
+    }
+  }
 }

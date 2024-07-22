@@ -18,4 +18,17 @@ main {
     padding: 30px;
     background-color: $white;
   }
+  &__text {
+    margin-bottom: 50px;
+  }
+  &__input {
+    background-color: $white;
+    padding: 30px;
+  }
+}
+.box {
+  &__input {
+    display: flex;
+    gap: 3px;
+  }
 }

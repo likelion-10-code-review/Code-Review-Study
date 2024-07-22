@@ -1,3 +1,4 @@
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -153,6 +154,18 @@ main {
   padding: 30px;
   background-color: #fff;
 }
+.container__text {
+  margin-bottom: 50px;
+}
+.container__input {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.box__input {
+  display: flex;
+  gap: 3px;
+}
 
 header {
   width: 100%;
@@ -169,15 +182,46 @@ header .header__menu li {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 72px;
   color: #000;
-  line-height: 150%;
+  line-height: 100%;
   font-weight: 200;
   font-family: Pretendard;
+  margin-bottom: 30px;
+}
+h1 span.font__bold {
+  font-weight: 600;
+}
+
+p.text__description {
+  border-left: 3px solid #3854de;
+  padding: 3px 10px;
+  line-height: 120%;
 }
 
 .input__select {
   background-color: transparent;
+}
+.input__search {
+  background-color: transparent;
+  border: 0;
+}
+.input__search::-moz-placeholder {
+  color: #000;
+}
+.input__search::placeholder {
+  color: #000;
+}
+
+.button {
+  border: 0;
+  margin-left: 15px;
+  font-size: 1.25rem;
+}
+.button__primary {
+  width: 100px;
+  background-color: #3854de;
+  color: #fff;
 }
 
 body {

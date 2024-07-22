@@ -9,5 +9,17 @@
 }
 
 h1 {
-  @include font($fz: 60px, $fw: 200);
+  @include font($fz: 72px, $fw: 200, $lh: 100%);
+  margin-bottom: 30px;
+
+  span.font__bold {
+    font-weight: 600;
+  }
+}
+p {
+  &.text__description {
+    border-left: 3px solid $primary__color;
+    padding: 3px 10px;
+    line-height: 120%;
+  }
 }
