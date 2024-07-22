@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass landing/csh/styles/style.scss landing/csh/styles/style.css",
-    "watch": "sass --watch landing/csh/styles/style.scss:landing/csh/styles/style.css"
+    "build": "sass styles/style.scss styles/style.css",
+    "watch": "sass --watch styles/style.scss:styles/style.css"
   },
   "devDependencies": {
     "sass": "^1.77.8"

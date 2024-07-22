@@ -174,7 +174,7 @@ header {
     margin: 80px 0 50px 0;
   }
   &__item {
-    @include size(500px, 250px);
+    @include size(400px, 250px);
     @include flexAll(row, space-between, center, 33px);
     margin: 20px;
 
@@ -256,7 +256,7 @@ header {
     }
   }
   &__img {
-    @include size(500px, 560px);
+    @include size(400px, 560px);
     position: absolute;
     right: 0;
     top: 90px;
@@ -288,15 +288,15 @@ header {
   @include flexAll(row, space-between, center, 0);
   background-color: #121a44;
   margin-top: 250px;
-  padding: 90px 170px 80px 115px;
+  padding: 90px 110px 80px 100px;
   position: relative;
   &__press {
-    @include size(550px, 470px);
+    @include size(500px, 470px);
     @include flexAll(column, space-between, start, 0);
     color: rgb(229, 229, 229);
     .press {
       &__contents {
-        padding-left: 200px;
+        padding-left: 170px;
         :nth-child(1) {
           @include font(1rem, 700, 170%);
         }
@@ -338,7 +338,7 @@ header {
     }
   }
   .press-awards__img {
-    @include size(250px, 580px);
+    @include size(220px, 580px);
     position: absolute;
     top: 240px;
     left: 0;
@@ -356,11 +356,11 @@ header {
       overflow: hidden;
 
       .swiper-slide {
-        @include size(450px, 850px);
+        @include size(380px, 850px);
         @include flexAll(column, space-between, center, 0);
         flex-shrink: 0;
         :nth-child(1) {
-          @include size(100%, 600px);
+          @include size(100%, 500px);
         }
         :nth-child(2) {
           margin-top: 30px;

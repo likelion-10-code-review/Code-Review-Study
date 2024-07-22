@@ -421,7 +421,7 @@ header .location-button__right:hover {
   margin: 80px 0 50px 0;
 }
 .discover__item {
-  width: 500px;
+  width: 400px;
   height: 250px;
   display: flex;
   flex-direction: row;
@@ -535,7 +535,7 @@ header .location-button__right:hover {
   line-height: 150%;
 }
 .commitments__img {
-  width: 500px;
+  width: 400px;
   height: 560px;
   position: absolute;
   right: 0;
@@ -574,11 +574,11 @@ header .location-button__right:hover {
   gap: 0;
   background-color: #121a44;
   margin-top: 250px;
-  padding: 90px 170px 80px 115px;
+  padding: 90px 110px 80px 100px;
   position: relative;
 }
 .press-awards__container__press {
-  width: 550px;
+  width: 500px;
   height: 470px;
   display: flex;
   flex-direction: column;
@@ -588,7 +588,7 @@ header .location-button__right:hover {
   color: rgb(229, 229, 229);
 }
 .press-awards__container__press .press__contents {
-  padding-left: 200px;
+  padding-left: 170px;
 }
 .press-awards__container__press .press__contents :nth-child(1) {
   font-size: 1rem;
@@ -644,7 +644,7 @@ header .location-button__right:hover {
   color: gray;
 }
 .press-awards__container .press-awards__img {
-  width: 250px;
+  width: 220px;
   height: 580px;
   position: absolute;
   top: 240px;
@@ -666,7 +666,7 @@ header .location-button__right:hover {
   overflow: hidden;
 }
 .customers__container .swiper-wrapper .swiper-slide {
-  width: 450px;
+  width: 380px;
   height: 850px;
   display: flex;
   flex-direction: column;
@@ -677,7 +677,7 @@ header .location-button__right:hover {
 }
 .customers__container .swiper-wrapper .swiper-slide :nth-child(1) {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 .customers__container .swiper-wrapper .swiper-slide :nth-child(2) {
   margin-top: 30px;
