@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <header>
+    <span class="header__find">
+      <a href="#" aria-label="Find a destination">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        FIND A DESTINATION
+      </a>
+    </span>
+
+    <span>
+      NOS DEMEURES
+      <select aria-label="Select a location">
+        <!-- <option value=""></option> -->
+      </select>
+    </span>
+
+    <span>
+      <a href="#" aria-label="Connexion">CONNEXION</a>
+    </span>
+
+    <span>
+      <a href="#" aria-label="Inscription">INSCRIPTION</a>
+    </span>
+  </header>
+
+  <section>
+    <div>
+      <div class="select__box">
+        <span>Beautiful</span>
+        <span>vacation moments.</span>
+        <span>
+          <div aria-hidden="true"></div>
+          We offer exceptional houses and experiences
+        </span>
+      </div>
+
+      <form class="select__booking-form" aria-labelledby="booking-form-title">
+        <h2 class="sr-only" id="booking-form-title">
+          Booking Form
+        </h2>
+
+        <div class="select__booking-form--where">
+          <p>WHERE</p>
+          <input type="text" placeholder="Your Destination" aria-label="Destination" />
+          <a href="/" aria-label="Destination Search">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="select__booking-form--date">
+          <p>DATE</p>
+          <label for="start-day" class="sr-only">Travel Start Date</label>
+          <input type="date" id="start-day" />
+
+          <label for="end-day" class="sr-only">Travel End Date</label>
+          <input type="date" id="end-day" />
+        </div>
+
+        <div class="select__booking-form--guest">
+          <p>GUEST</p>
+          <input type="number" placeholder="Guest" aria-label="Number of Guests" />
+        </div>
+
+        <button type="submit" aria-label="Submit Booking">
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <main>
+    <div class="main__box">
+      <div class="main__box--title">
+        <span>
+          <span class="main__box--title-discover">Discover</span>
+          our best
+        </span>
+        <span>experiences.</span>
+      </div>
+
+      <div class="main__box--products">
+        <div class="main__box--product">
+          <img src="./style/product1.png" alt="첫 번째 장소 이미지" />
+          <div class="main__product--description">
+            <span class="title">Wild Wiza</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua</span>
+            <a href="#">DISCOVER
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="main__box--product">
+          <img src="./style/product2.png" alt="두 번째 장소 이미지" />
+          <div class="main__product--description">
+            <span class="title">Or the roads of Prauence</span> <span>Lorem ipsum dolor sit amet,
+              consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut</span>
+            <a href="#">DISCOVER
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

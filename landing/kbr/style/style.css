@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  user-select: none;
+
+  background: url('./background-image.jpg') no-repeat;
+  background-size: cover;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+
+/* header */
+header {
+  width: 100%;
+  padding: 2rem 0;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .header__find {
+    margin-right: 15rem;
+
+    i {
+      margin-right: 1rem;
+    }
+  }
+
+  span {
+    margin-right: 3rem;
+
+    select {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+/* section */
+.select__box {
+  height: 12rem;
+  margin: 1.5rem 0 -1rem 13rem;
+
+  display: flex;
+  flex-direction: column;
+
+  span:nth-child(1) {
+    font-size: 3.1rem;
+    font-weight: 700;
+  }
+
+  span:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  span:nth-child(3) {
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+
+    div {
+      width: 3px;
+      height: 25px;
+      background-color: #3954DF;
+      margin-right: 0.8rem;
+    }
+  }
+}
+
+
+.select__booking-form {
+  height: 8rem;
+  margin: 2rem 0 0 13rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  div {
+    height: 6rem;
+    background-color: white;
+    margin-right: 0.4rem;
+
+    p {
+      margin-left: 1.3rem;
+    }
+  }
+
+  .select__booking-form--where {
+    width: 20rem;
+  }
+
+  .select__booking-form--date {
+    width: 23rem;
+  }
+
+  .select__booking-form--guest {
+    width: 10rem;
+  }
+
+  input {
+    width: 8rem;
+    font-size: 1.1rem;
+    margin-left: 1.3rem;
+
+    border: none;
+  }
+
+  button {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 1rem;
+
+    background-color: #3954DF;
+    border: none;
+    cursor: pointer;
+
+    i {
+      color: white;
+    }
+  }
+
+  a {
+    margin-left: 7rem;
+  }
+}
+
+
+/* main */
+main {
+  width: 80rem;
+  height: auto;
+  margin: 4rem 0 0 10rem;
+
+  background-color: white;
+  user-select: none;
+
+  .main__box {
+    padding: 4rem 5rem;
+
+    /* 제목 */
+    .main__box--title {
+      font-size: 2rem;
+
+      display: flex;
+      flex-direction: column;
+
+      .main__box--title-discover {
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+  }
+
+  /* 설명 */
+  .main__box--products {
+    display: flex;
+    flex-direction: row;
+
+    .main__box--product {
+      width: 560px;
+      padding: 0;
+      margin-top: 2rem;
+
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+
+      img {
+        width: 220px;
+        height: 270px;
+        margin-right: 2.5rem;
+      }
+
+      .main__product--description {
+        width: 19rem;
+
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          margin: 5rem 0 0.7rem 0;
+
+          font-size: 1.8rem;
+          font-weight: 800;
+        }
+      }
+
+      a {
+        margin-top: 2rem;
+        color: blue;
+        text-decoration: none;
+
+        i {
+          margin-left: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
