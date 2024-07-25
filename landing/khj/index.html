@@ -1,9 +1,260 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>le collectionist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="gnb">
+    <h1 class="gnb__title"><a href="#">le collectionist</a></h1>
+
+    <div class="gnb__search input__group" role="group">
+      <span class="fa-solid fa-magnifying-glass" aria-hidden="true"></span>
+      <label for="search" class="sr-only">search</label>
+      <input type="text" id="search" placeholder="find a destination" />
+    </div>
+
+    <nav class="gnb__nav" role="group">
+      <ul class="gnb__nav__list" role="list">
+        <li class="gnb__nav__item" role="listitem">
+          <button type="button" class="item--dropdown">
+            nos demeures<span class="fa-solid fa-chevron-down" aria-hidden="true"></span>
+          </button>
+        </li>
+        <li class="gnb__nav__item" role="listitem">
+          <a href="#">connexion</a>
+        </li>
+        <li class="gnb__nav__item" role="listitem">
+          <a href="#">inscription</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="beautiful">
+      <h2 class="beautiful__title"><strong>Beautiful</strong>vacation moments.</h2>
+      <p class="beautiful__desc">We offer exceptional houses and experiences</p>
+      <form action="">
+        <div class="input__group">
+          <div>
+            <label for="">where?</label>
+            <input type="text" id="" placeholder="Your Destination" />
+          </div>
+          <div>
+            <label for="">date</label>
+            <input type="text" id="" placeholder="Thu. 26/1/17 * Fri.30/1/17" />
+          </div>
+          <div>
+            <label for="">guest</label>
+            <input type="text" id="" placeholder="01" />
+          </div>
+        </div>
+        <button type="submit"><span class="fa-solid fa-arrow-right-long" aria-hidden="true"></span></button>
+      </form>
+    </section>
+    <section class="discover">
+      <h2 class="discover__title"><strong>Discover</strong>our best experiences.</h2>
+      <div class="discover__img--wrapper">
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2022/10/04/14/50/computer-7498415_1280.jpg" alt="" />
+          <figcaption>
+            <h3>Wild</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates optio consectetur, autem fugiat
+              deserunt quidem assumenda dolor accusantium porro, at amet ducimus doloremque minima. Laudantium unde
+              molestias libero cumque quibusdam!
+            </p>
+            <button type="button">discover<span class="fa-solid fa-arrow-right-long" aria-hidden="true"></span></button>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2018/07/28/01/08/vintage-3567130_640.jpg" alt="" />
+          <figcaption>
+            <h3>on the reads of prauence</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates optio consectetur, autem fugiat
+              deserunt quidem assumenda dolor accusantium porro, at amet ducimus doloremque minima. Laudantium unde
+              molestias libero cumque quibusdam!
+            </p>
+            <button type="button">discover<span class="fa-solid fa-arrow-right-long" aria-hidden="true"></span></button>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2020/08/25/18/28/workplace-5517744_640.jpg" alt="" />
+          <figcaption>
+            <h3>Honeymoon Time</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates optio consectetur, autem fugiat
+              deserunt quidem assumenda dolor accusantium porro, at amet ducimus doloremque minima. Laudantium unde
+              molestias libero cumque quibusdam!
+            </p>
+            <button type="button">discover<span class="fa-solid fa-arrow-right-long" aria-hidden="true"></span></button>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2017/08/05/13/06/girl-2583442_640.jpg" alt="" />
+          <figcaption>
+            <h3>Road Trip</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates optio consectetur, autem fugiat
+              deserunt quidem assumenda dolor accusantium porro, at amet ducimus doloremque minima. Laudantium unde
+              molestias libero cumque quibusdam!
+            </p>
+            <button type="button">discover<span class="fa-solid fa-arrow-right-long" aria-hidden="true"></span></button>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2016/11/21/16/27/laptop-1846277_640.jpg" alt="" />
+          <figcaption>
+            <h3>ROYAL HOUSE</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates optio consectetur, autem fugiat
+              deserunt quidem assumenda dolor accusantium porro, at amet ducimus doloremque minima. Laudantium unde
+              molestias libero cumque quibusdam!
+            </p>
+            <button type="button">discover<span class="fa-solid fa-arrow-right-long" aria-hidden="true"></span></button>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2024/02/24/22/40/ai-generated-8594861_640.png" alt="" />
+          <figcaption>
+            <h3>Into the wild</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates optio consectetur, autem fugiat
+              deserunt quidem assumenda dolor accusantium porro, at amet ducimus doloremque minima. Laudantium unde
+              molestias libero cumque quibusdam!
+            </p>
+            <button type="button">discover<span class="fa-solid fa-arrow-right-long" aria-hidden="true"></span></button>
+          </figcaption>
+        </figure>
+      </div>
+      <button type="button">more destinations</button>
+    </section>
+    <section class="commitments">
+      <h2><strong>our</strong>commitments.</h2>
+      <div>
+        <span class="fa-solid fa-house" aria-hidden="true"></span>
+        <h3>Exceptional houses</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est unde suscipit ab natus obcaecati
+          voluptatem id ea quas placeat. Delectus at eum sed esse expedita ex, qui excepturi et?
+        </p>
+      </div>
+      <div>
+        <span class="fa-solid fa-headphones" aria-hidden="true"></span>
+        <h3>Advice and support</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est unde suscipit ab natus obcaecati
+          voluptatem id ea quas placeat. Delectus at eum sed esse expedita ex, qui excepturi et?
+        </p>
+      </div>
+      <div>
+        <span class="fa-solid fa-earth-africa" aria-hidden="true"></span>
+        <h3>Original experiences</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est unde suscipit ab natus obcaecati
+          voluptatem id ea quas placeat. Delectus at eum sed esse expedita ex, qui excepturi et?
+        </p>
+      </div>
+      <article class="concept">
+        <h3><strong>The</strong>Concept</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum earum, quae dignissimos unde facilis nulla hic
+          eum exercitationem, similique ratione maxime ipsum recusandae tempore. Obcaecati eaque excepturi iusto
+          voluptatem laboriosam.</p>
+      </article>
+    </section>
+    <section class="">
+      <h2></h2>
+      <article class="press">
+        <h3><strong>Our</strong> Press.</h3>
+        <dl>
+          <dt>I'm the headline of this press release</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aut nemo esse ullam voluptates voluptas,
+            dignissimos maxime eveniet consequatur aspernatur beatae debitis alias consequuntur? Natus totam accusamus
+            tempora illum est.</dd>
+          <time datetime="">September 23, 2016</time>
+        </dl>
+        <dl>
+          <dt>An other headline</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aut nemo esse ullam voluptates voluptas,
+            dignissimos maxime eveniet consequatur aspernatur beatae debitis alias consequuntur? Natus totam accusamus
+            tempora illum est.</dd>
+          <time datetime="">September 31, 2016</time>
+        </dl>
+      </article>
+      <article class="awards">
+        <h3><strong>Our</strong> Awards.</h3>
+        <div>
+          <div>
+            <strong>netflix</strong>
+            <time datetime="">September 23, 2016</time>
+          </div>
+          <div>
+            <strong>netflix</strong>
+            <time datetime="">September 23, 2016</time>
+          </div>
+          <div>
+            <strong>netflix</strong>
+            <time datetime="">September 23, 2016</time>
+          </div>
+          <div>
+            <strong>netflix</strong>
+            <time datetime="">September 23, 2016</time>
+          </div>
+          <div>
+            <strong>netflix</strong>
+            <time datetime="">September 23, 2016</time>
+          </div>
+          <div>
+            <strong>netflix</strong>
+            <time datetime="">September 23, 2016</time>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h2><strong>Customers</strong>Testimonials.</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/6368848/pexels-photo-6368848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/6016387/pexels-photo-6016387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/5965705/pexels-photo-5965705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/7859323/pexels-photo-7859323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
