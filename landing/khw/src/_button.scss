@@ -1,0 +1,11 @@
+.button {
+  border: 0;
+  margin-left: 15px;
+  font-size: 1.25rem;
+  padding: 30px;
+
+  &__primary {
+    background-color: $primary__color;
+    color: $white;
+  }
+}

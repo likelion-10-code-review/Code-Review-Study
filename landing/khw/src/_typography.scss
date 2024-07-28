@@ -1,0 +1,39 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@mixin font($fz, $fc: #000, $lh: 150%, $fw: 400, $ff: Pretendard) {
+  font-size: $fz;
+  color: $fc;
+  line-height: $lh;
+  font-weight: $fw;
+  font-family: $ff;
+}
+
+span.font__bold {
+  font-weight: 600;
+}
+
+h1 {
+  @include font($fz: 72px, $fw: 200, $lh: 100%);
+  margin-bottom: 30px;
+}
+h2 {
+  @include font($fz: 36px, $fw: 200, $lh: 100%);
+  margin-bottom: 20px;
+
+  &.font__white {
+    color: $white;
+  }
+}
+h3 {
+  @include font($fz: 30px, $fw: 200, $lh: 100%);
+  margin-bottom: 10px;
+}
+p {
+  @include font($fc: $gray500, $fz: 16px, $fw: 400, $lh: 160%);
+
+  &.text__description {
+    border-left: 3px solid $primary__color;
+    padding: 3px 10px;
+    line-height: 120%;
+  }
+}

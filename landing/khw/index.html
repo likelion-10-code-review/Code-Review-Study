@@ -3,7 +3,401 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>[KHW] Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header__logo">LOGO</div>
+      <fieldset>
+        <i class="fi fi-rr-search"></i>
+        <input
+          class="input__search"
+          type="text"
+          name=""
+          id=""
+          placeholder="FIND A DESTINATION"
+        />
+      </fieldset>
+      <ul class="header__menu">
+        <li>MENU01</li>
+        <li>MENU02</li>
+        <li>MENU03</li>
+      </ul>
+    </header>
+    <main>
+      <section class="container__top">
+        <div class="container__text">
+          <h1>
+            <span class="font__bold">Beautiful</span><br />
+            vacation moments.
+          </h1>
+          <p class="text__description">
+            We offer exceptional houses and experiences
+          </p>
+        </div>
+        <div class="box__input">
+          <div class="container__input">
+            <label for="destinationSelect">WHERE ?</label>
+            <br />
+            <select name="" id="destinationSelect" class="input__select">
+              <option value="0">Your Destination</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="container__input">
+            <label for="dateRange">
+              DATE<br />
+              <input type="date" name="dateRange" id="" />
+              <input type="date" name="dateRange" id="" />
+            </label>
+          </div>
+          <div class="container__input">
+            <label for="guestNum">
+              GUEST<br />
+              <input type="number" name="" id="guestNum" />
+            </label>
+          </div>
+          <button class="button button__primary" type="button">
+            <i class="fi fi-rr-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="container__middle">
+        <h2>
+          <span class="font__bold">Discover</span> our best<br />
+          experiences.
+        </h2>
+        <div class="discover__container">
+          <div class="site__container">
+            <div class="img__container">
+              <img
+                src="https://images.unsplash.com/photo-1620320958515-9921cd495d0d?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="discription">
+              <h3>Wild Ibiza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus cumque nostrum eveniet voluptas distinctio sunt, porro
+                velit. Placeat explicabo excepturi earum nemo vero, cumque aut?
+                Eaque, laborum. Accusamus, quo modi.
+              </p>
+              <a href="">DISCOVER -></a>
+            </div>
+          </div>
+          <div class="site__container">
+            <div class="img__container">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1688120019185-36cdc0a0d676?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="discription">
+              <h3>On the roads of Provence</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus cumque nostrum eveniet voluptas distinctio sunt, porro
+                velit. Placeat explicabo excepturi earum nemo vero, cumque aut?
+                Eaque, laborum. Accusamus, quo modi.
+              </p>
+              <a href="">DISCOVER -></a>
+            </div>
+          </div>
+          <div class="site__container">
+            <div class="img__container">
+              <img
+                src="https://images.unsplash.com/photo-1620320958515-9921cd495d0d?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="discription">
+              <h3>Wild Ibiza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus cumque nostrum eveniet voluptas distinctio sunt, porro
+                velit. Placeat explicabo excepturi earum nemo vero, cumque aut?
+                Eaque, laborum. Accusamus, quo modi.
+              </p>
+              <a href="">DISCOVER -></a>
+            </div>
+          </div>
+          <div class="site__container">
+            <div class="img__container">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1688120019185-36cdc0a0d676?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="discription">
+              <h3>On the roads of Provence</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus cumque nostrum eveniet voluptas distinctio sunt, porro
+                velit. Placeat explicabo excepturi earum nemo vero, cumque aut?
+                Eaque, laborum. Accusamus, quo modi.
+              </p>
+              <a href="">DISCOVER -></a>
+            </div>
+          </div>
+          <div class="site__container">
+            <div class="img__container">
+              <img
+                src="https://images.unsplash.com/photo-1620320958515-9921cd495d0d?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="discription">
+              <h3>Wild Ibiza</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus cumque nostrum eveniet voluptas distinctio sunt, porro
+                velit. Placeat explicabo excepturi earum nemo vero, cumque aut?
+                Eaque, laborum. Accusamus, quo modi.
+              </p>
+              <a href="">DISCOVER -></a>
+            </div>
+          </div>
+          <div class="site__container">
+            <div class="img__container">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1688120019185-36cdc0a0d676?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="discription">
+              <h3>On the roads of Provence</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Accusamus cumque nostrum eveniet voluptas distinctio sunt, porro
+                velit. Placeat explicabo excepturi earum nemo vero, cumque aut?
+                Eaque, laborum. Accusamus, quo modi.
+              </p>
+              <a href="">DISCOVER -></a>
+            </div>
+          </div>
+          <button class="button button__primary" type="button">
+            MORE DESTINATIONS
+          </button>
+        </div>
+      </section>
+      <section class="container__bottom">
+        <div class="gray__container">
+          <h2><span class="font__bold">Our</span> commitments.</h2>
+          <div class="box__container">
+            <div>
+              <div class="img__container">
+                <img src="./src/img/house-chimney-heart.svg" alt="" />
+              </div>
+              <h3>Exceptional houses</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas fuga maiores nemo, corrupti veritatis ipsam distinctio
+                tempore iste aliquid ratione, consequuntur similique id,
+                praesentium dolorem rerum? Magnam in natus illum!
+              </p>
+            </div>
+            <div>
+              <div class="img__container">
+                <img src="./src/img/house-chimney-heart.svg" alt="" />
+              </div>
+              <h3>Exceptional houses</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas fuga maiores nemo, corrupti veritatis ipsam distinctio
+                tempore iste aliquid ratione, consequuntur similique id,
+                praesentium dolorem rerum? Magnam in natus illum!
+              </p>
+            </div>
+            <div>
+              <div class="img__container">
+                <img src="./src/img/house-chimney-heart.svg" alt="" />
+              </div>
+              <h3>Exceptional houses</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas fuga maiores nemo, corrupti veritatis ipsam distinctio
+                tempore iste aliquid ratione, consequuntur similique id,
+                praesentium dolorem rerum? Magnam in natus illum!
+              </p>
+            </div>
+            <div class="container">
+              <img
+                src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container__bottom__02">
+        <div class="container">
+          <h2><span class="font__bold">The</span> Concept</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet in
+            quis distinctio, maiores assumenda tempore velit eos iste
+            necessitatibus perspiciatis praesentium omnis ullam! Alias, pariatur
+            asperiores non incidunt laborum facilis.
+          </p>
+        </div>
+      </section>
+      <section class="container__bottom__03">
+        <div class="container">
+          <h2 class="font__white">
+            <span class="font__bold">Our</span> Press.
+          </h2>
+          <div class="text__container">
+            <div class="img__container">
+              <img
+                src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+              in quis distinctio, maiores assumenda tempore velit eos iste
+              necessitatibus perspiciatis praesentium omnis ullam! Alias,
+              pariatur asperiores non incidunt laborum facilis.<br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              consequuntur magni laborum numquam eligendi ab minus possimus
+              omnis quae porro voluptatem velit corrupti dolore dicta, optio
+              maxime provident et! Mollitia?
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="font__white">
+            <span class="font__bold">Our</span> Awards.
+          </h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet in
+            quis distinctio, maiores assumenda tempore velit eos iste
+            necessitatibus perspiciatis praesentium omnis ullam! Alias, pariatur
+            asperiores non incidunt laborum facilis.
+          </p>
+        </div>
+      </section>
+      <section class="container__bottom__04">
+        <h2><span class="font__bold">Customers</span> Testimonials.</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="img__container">
+                  <img
+                    src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQyU4MiVBQyVFQyU5NyU4NXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="text__container">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nostrum quos, hic ullam officia, ducimus recusandae sequi,
+                  odio rerum adipisci ad distinctio nisi velit minus odit esse
+                  ipsa a quaerat est.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="img__container">
+                  <img
+                    src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQyU4MiVBQyVFQyU5NyU4NXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="text__container">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati sunt deserunt sequi rem atque exercitationem velit
+                  laboriosam alias, error dolor corporis similique quo harum
+                  doloribus repellendus id nihil distinctio qui?
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="img__container">
+                  <img
+                    src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQyU4MiVBQyVFQyU5NyU4NXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="text__container">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ratione ipsa accusamus molestiae quo incidunt? Perspiciatis
+                  mollitia eligendi recusandae illo repellat corrupti ut
+                  repellendus, reiciendis, voluptates beatae minus voluptas
+                  voluptatibus enim.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="img__container">
+                  <img
+                    src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQyU4MiVBQyVFQyU5NyU4NXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="text__container">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia eius natus nostrum, repellat fuga atque nesciunt rem
+                  odio accusantium fugiat voluptates ab nulla quo pariatur quia
+                  assumenda sed facilis sapiente!
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="img__container">
+                  <img
+                    src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQyU4MiVBQyVFQyU5NyU4NXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="text__container">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  voluptas repellat fugit eaque dignissimos ab sed repudiandae,
+                  iure itaque vero eum ipsa exercitationem saepe numquam! Aut
+                  obcaecati ex suscipit corporis.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="img__container">
+                  <img
+                    src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQyU4MiVBQyVFQyU5NyU4NXxlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="text__container">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis iure tempore harum porro quas itaque adipisci
+                  explicabo velit dolor ea quo rem architecto sit reprehenderit
+                  tempora, exercitationem facere cumque aspernatur?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev button button__primary"></div>
+          <div class="swiper-button-next button button__primary"></div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script type="module" src="./src/main.js"></script>
 </html>

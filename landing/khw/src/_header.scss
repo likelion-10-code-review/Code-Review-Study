@@ -1,0 +1,17 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 120px;
+  position: absolute;
+
+  .header {
+    &__menu {
+      display: flex;
+
+      li {
+        padding: 0 20px;
+      }
+    }
+  }
+}
