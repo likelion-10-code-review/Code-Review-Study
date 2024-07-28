@@ -1,0 +1,56 @@
+@import url(reset.css);
+body {
+  padding: 30px 50px 30px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #181818;
+}
+header h1 {
+  left: 0px;
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu__container {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 0px;
+}
+
+main {
+  padding-top: 30px;
+  margin-left: 30px;
+}
+main .title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+main .title__first {
+  font-weight: bold;
+}
+main .title__explain {
+  margin-bottom: 40px;
+}
+main .select {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+main .select__input {
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+main .select__input input {
+  background-color: transparent;
+  border: none;
+}/*# sourceMappingURL=main.css.map */
