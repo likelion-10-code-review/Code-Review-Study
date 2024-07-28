@@ -2,9 +2,9 @@
   border: 0;
   margin-left: 15px;
   font-size: 1.25rem;
+  padding: 30px;
 
   &__primary {
-    width: 100px;
     background-color: $primary__color;
     color: $white;
   }

@@ -23,6 +23,7 @@ h3 {
   @include font($fz: 30px, $fw: 200, $lh: 100%);
 }
 p {
+  @include font($fz: 16px, $fw: 400, $lh: 150%);
   &.text__description {
     border-left: 3px solid $primary__color;
     padding: 3px 10px;
