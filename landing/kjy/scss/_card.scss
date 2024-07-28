@@ -1,13 +1,59 @@
 /* ----------------------------------- 카드 ----------------------------------- */
-
-
+@use 'variables' as *;
 
 .card {
-  width: 500px;
-  height: 500px;
-  background-color: skyblue;
+  // width: 30%;
+  max-width: 380px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  
 
   img {
-    width: 100px;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  figcaption {
+    padding-left: $spacing-32;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1fr 0.2fr;
+    grid-template-areas: 
+    "header"
+    "desc"
+    "anchor";
+    align-items: end;
+
+    h4 {
+      grid-area: header;
+      padding: 0 $spacing-8 $spacing-8 0;
+      font-size: $text-28;
+      font-weight: bold;
+      color: $gray-300;
+    }
+
+    span {
+      grid-area: desc;
+      align-self: flex-start;
+      font-size: 0.9rem;
+      color: #9D9D9D;
+    }
+
+    a {
+      grid-area: anchor;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 1rem;
+
+      span {
+        color: $blue;
+        font-size: 0.7rem;
+        font-weight: bold;
+      }
+    }
   }
 }
+
