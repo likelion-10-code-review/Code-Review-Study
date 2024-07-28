@@ -18,12 +18,19 @@ h1 {
 }
 h2 {
   @include font($fz: 36px, $fw: 200, $lh: 100%);
+  margin-bottom: 20px;
+
+  &.font__white {
+    color: $white;
+  }
 }
 h3 {
   @include font($fz: 30px, $fw: 200, $lh: 100%);
+  margin-bottom: 10px;
 }
 p {
-  @include font($fz: 16px, $fw: 400, $lh: 150%);
+  @include font($fc: $gray500, $fz: 16px, $fw: 400, $lh: 160%);
+
   &.text__description {
     border-left: 3px solid $primary__color;
     padding: 3px 10px;
