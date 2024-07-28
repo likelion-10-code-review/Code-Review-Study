@@ -1,0 +1,20 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "코드 리뷰 스터디 landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p serve watch",
+    "serve": "live-server src --port=3000 --host=localhost",
+    "tailwind": "tailwindcss -i src/styles/tailwind.css -o src/styles/main.css",
+    "watch": "pnpm tailwind -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.4.7"
+  }
+}

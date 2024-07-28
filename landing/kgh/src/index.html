@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="h-screen font-roboto bg-gradient-to-b from-slate-200 to-white text-gray-800">
+    <header class="flex justify-between items-center px-16 py-5 mb-6">
+      <h1 aria-label="logo"><a href="#" class="text-2xl font-medium">le collectionist</a></h1>
+      <form class="text-sm flex gap-3 items-center">
+        <span class="fa-solid fa-magnifying-glass"></span>
+        <label for="search" class="sr-only">search</label>
+        <input type="text" name="search" id="search" placeholder="FIND A DESTINATION" class="placeholder:text-gray-800 bg-transparent" />
+      </form>
+      <nav class="flex gap-3 text-sm">
+        <form>
+          <label for="select-stay" class="sr-only">select stay</label>
+          <select name="select-stay" id="select-stay" class="bg-transparent">
+            <option value="">NOS DEMEURES</option>
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option3">option3</option>
+            <option value="option4">option4</option>
+            <option value="option5">option5</option>
+          </select>
+        </form>
+        <a href="#">CONNEXION</a>
+        <a href="#">INSCRIPTION</a>
+      </nav>
+    </header>
+    <main>
+      <section aria-label="travel-plan" class="pl-28 mb-16 relative">
+        <h2 class="text-5xl font-light mb-6">
+          <strong class="font-medium">Beautiful</strong> <br />
+          vacation monents.
+        </h2>
+        <span class="block mb-12 pl-3 before:content-[''] before:w-[2px] before:h-[18px] before:bg-blue-600 relative before:absolute before:top-[2px] before:left-0">We offer exceptional houses and experiences</span>
+        <form aria-label="vacation plan search" class="flex items-center h-16">
+          <div role="group" class="flex flex-col justify-center px-5 h-full bg-white border-r-[1px]">
+            <label for="destination-search" class="block text-sm font-medium">WHERE?</label>
+            <div role="group">
+              <input type="text" name="destination-search" id="destination-search" placeholder="Your Destination" />
+              <span class="fa-regular fa-paper-plane"></span>
+            </div>
+          </div>
+          <div role="group" class="flex flex-col justify-center px-5 h-full bg-white border-r-[1px]">
+            <span class="text-sm font-medium">DATE</span>
+            <div role="group">
+              <label for="first-day-of-travel" class="sr-only">first day of travel</label>
+              <input type="date" name="first-day-of-travel" id="first-day-of-travel" />
+              <span aria-hidden="true">-</span>
+              <label for="last-day-of-travel" class="sr-only">last day of travel</label>
+              <input type="date" name="last-day-of-travel" id="last-day-of-travel" />
+            </div>
+          </div>
+          <div role="group" class="flex flex-col justify-center px-5 h-full bg-white">
+            <label for="number-of-guest" class="block text-sm font-medium">GUEST</label>
+            <input type="number" name="number-of-guest" id="number-of-guest" />
+          </div>
+          <button class="w-16 h-full ml-4 bg-blue-600 text-white">
+            <span class="fa-solid fa-arrow-right"></span>
+          </button>
+        </form>
+        <div role="group" class="flex items-center gap-4 absolute bottom-0 right-0 pl-7 pr-5 py-4 border-t-[1px] border-white text-sm">
+          <span class="text-right text-white">
+            <strong>112 LOCATIONS</strong> <br />
+            Spain
+          </span>
+          <a href="#" class="w-7 h-7 rounded-full bg-[rgba(255,255,255,0.5)] flex justify-center items-center"><span class="fa-solid fa-arrow-right"></span></a>
+        </div>
+      </section>
+      <section></section>
+    </main>
+  </body>
+</html>
