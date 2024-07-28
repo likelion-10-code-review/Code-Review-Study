@@ -3,7 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/main.js"></script>
+    <title>LANDING</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>zam onda</h1>
+      <!-- find a destination / 아마 누르면 장소찾기? -->
+      <a class="header__find">
+        <svg role="img" class="svg-icon" width="15px" height="15px" aria-label="find destination">
+          <use href="public/magnifying.svg#magnifying" />
+        </svg>
+        FIND A DESTINATION
+      </a>
+      <li class="menu__container">
+        <div class="menu__first__container">
+          <a href="/">NOS DEMEURES</a>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <a href="/">CONNEXION</a>
+        <a href="/">INSCRIPTION</a>
+      </li>
+
+    </header>
+
+    <main>
+      <section class="select__container">
+        <h1 class="title">
+          <span class="title__first">Beautiful</span>
+        </br>
+          vacation moments.
+        </h1>
+        <p class="title__explain">
+          | We offer exceptional house and experiences
+        </p>
+        
+        <form action="#" class="select">
+          <div class="select__input">
+            <label for="destination">WHERE</label>
+            <div>
+              <input type="text" id="destination" />
+              <svg role="img" width="20px" height="20px" >
+                <use href="public/where.svg#where" />
+              </svg>
+            </div>
+          </div>
+          <div class="select__input">
+            <label for="date">DATE</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="select__input">
+            <label for="guest">GUEST</label>
+            <input type="number" id="guest" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
