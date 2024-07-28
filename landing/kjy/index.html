@@ -3,7 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>le collectionist</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1>
+        <a href="/">
+          le collectionist
+        </a>
+      </h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li>
+            <div class="nav__button">
+              <button type="button">
+                <span>NOS DEMEURES</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                </svg>
+              </button>
+              
+            </div>
+            <ul style="display: none;">
+              <li>
+                <a href="/">MENU-A</a>
+              </li>
+              <li>
+                <a href="/">MENU-B</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/">CONNEXION</a>
+          </li>
+          <li>
+            <a href="/">INSCRIPTION</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="header__search" action="#" method="POST">
+        <div class="search__wrapper">
+          <label class="search__label" for="headerSearch">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </label>
+          <input type="search" id="headerSearch" class="search__input" placeholder="FIND A DESTICATION" />
+        </div>
+      </form>
+    </header>
+
+    <main class="main">
+      <section class="greeting">
+        <h2>
+          <span>BEAUTIFUL</span>
+          <span>vacation moments.</span>
+        </h2>
+        <p>We offer exceptional houses and experiences</p>
+        <div>
+          <section class="greeting__reservation">
+            <form class="reservation__form" id="reservation__form" action="#" method="POST">
+              <div class="form__where">
+                <label for="where__input">WHERE?</label>
+                <div class="where__input__text">
+                  <input id="where__input" type="text" placeholder="YOUR TECHIT" required />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="form__date">
+                <label for="date__input">DATE</label>
+                <div class="date__input__text">
+                  <input id="date__input" type="date" value="2024-04-22" min="2024-04-22" required />
+                  <span aria-hidden="true">&#45;</span>
+                  <input id="date__input" type="date" value="2024-09-25" min="2024-04-22" max="2024-09-25" />
+                </div>
+              </div>
+              <div class="form__guest">
+                <label for="guest__input">GUEST</label>
+                <input id="guest__input" type="number" min="1" value="1" required />
+              </div>
+            </form>
+            <button class="form__button" type="submit" form="reservation__form" aria-hidden="true" aria-label="검색하기">&#8594;</button>
+          </section>
+        </div>
+      </section>
+
+      <aside class="aside__locations">
+        <a href="/"></a>
+        <div class="locations__text">
+          <span>112 LOCATIONS</span>
+          <span>Spain</span>
+        </div>
+        <span class="locations__arrow">&#8594;</span>
+      </aside>
+
+      <section class="card__container">
+        <h3 class="card__header">
+          <span>Discover</span> our best experiences.
+        </h3>
+      
+        <div class="card__wrapper">
+          <figure class="card">
+            <img src="./assets/card-image.webp" alt="숙소" />
+            <figcaption>
+              <h4>wild Ibiza</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at dicta ipsa ab repellendus.</span>
+            <a href="/">
+              <span>DISCOVER</span><span aria-hidden="true">&#8594;</span>
+            </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/card-image.webp" alt="" />
+            <figcaption>
+              <h4>On the roads of Provence</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at dicta ipsa ab repellendus.</span>
+            <a href="/">
+              <span>DISCOVER</span><span aria-hidden="true">&#8594;</span>
+            </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/card-image.webp" alt="" />
+            <figcaption>
+              <h4>Honeymoon Time</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <a href="/">
+              <span>DISCOVER</span><span aria-hidden="true">&#8594;</span>
+            </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/card-image.webp" alt="" />
+            <figcaption>
+              <h4>Road Trip</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at dicta ipsa ab repellendus.</span>
+            <a href="/">
+              <span>DISCOVER</span><span aria-hidden="true">&#8594;</span>
+            </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/card-image.webp" alt="" />
+            <figcaption>
+              <h4>ROYAL HOUSE</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at dicta ipsa ab repellendus.</span>
+            <a href="/">
+              <span>DISCOVER</span><span aria-hidden="true">&#8594;</span>
+            </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/card-image.webp" alt="" />
+            <figcaption>
+              <h4>Into the wild</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <a href="/">
+              <span>DISCOVER</span><span aria-hidden="true">&#8594;</span>
+            </a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <a class="card__more" href="/">
+          MORE DESTINATIONS
+        </a>
+      </section>
+    </main>
+
+  </body>
 </html>

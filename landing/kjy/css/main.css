@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* 스타일 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  font-size: 1em;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+figure {
+  margin: 0;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+  font: inherit;
+}
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* 숨김 콘텐츠 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ----------------------------------- 카드 ----------------------------------- */
+.card {
+  max-width: 380px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.card img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+.card figcaption {
+  padding-left: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2fr 1fr 0.2fr;
+  grid-template-areas: "header" "desc" "anchor";
+  align-items: end;
+}
+.card figcaption h4 {
+  grid-area: header;
+  padding: 0 0.5rem 0.5rem 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2D2E2E;
+}
+.card figcaption span {
+  grid-area: desc;
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: #9D9D9D;
+}
+.card figcaption a {
+  grid-area: anchor;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+.card figcaption a span {
+  color: #3853DD;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* ----------------------------------- 버튼 ----------------------------------- */
+.aside__locations {
+  position: fixed;
+  top: 280px;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-top: 1px solid #CFCFD0;
+  font-size: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.aside__locations a {
+  position: absolute;
+  top: 0;
+  width: 161px;
+  height: 38px;
+}
+.aside__locations .locations__text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: end;
+  color: #CFCFD0;
+}
+.aside__locations .locations__text span:nth-child(1) {
+  font-weight: bold;
+}
+.aside__locations .locations__arrow {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 50%;
+  background-color: #CFCFD0;
+}
+
+.card__more {
+  display: grid;
+  place-items: center;
+  align-self: center;
+  width: 170px;
+  height: 50px;
+  background-color: #3853DD;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+
+/* ----------------------------------- 메뉴 ----------------------------------- */
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo search menu";
+  width: 90%;
+  margin-top: 20px;
+}
+
+h1 {
+  grid-area: logo;
+  font-size: 2rem;
+}
+
+.nav {
+  display: grid;
+  grid-area: menu;
+  order: 1;
+}
+
+.nav__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  font-size: 0.75rem;
+}
+.nav__list .nav__button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list .nav__button button {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.25rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__search {
+  grid-area: search;
+  place-self: center;
+  font-size: 0.75rem;
+}
+.header__search .search__wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.header__search .search__wrapper label {
+  width: 10px;
+}
+.header__search .search__wrapper label svg {
+  width: 10px;
+}
+.header__search .search__wrapper input {
+  border: 0;
+  width: 110px;
+  font-size: 0.625rem;
+  background-color: transparent;
+  outline: none;
+}
+.header__search .search__wrapper input::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* ----------------------------------- 예약 ----------------------------------- */
+.greeting__reservation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  width: 650px;
+  height: 60px;
+}
+
+.reservation__form {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2px;
+  height: 60px;
+}
+.reservation__form > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 0.875rem;
+  font-size: 0.75rem;
+  background-color: #ffffff;
+}
+.reservation__form > div > label {
+  font-weight: bold;
+  color: #2D2E2E;
+}
+.reservation__form > div input {
+  color: #727272;
+  outline: none;
+}
+
+.form__where {
+  width: 200px;
+}
+.form__where .where__input__text {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.form__where .where__input__text input {
+  flex-grow: 1;
+  border: none;
+  height: 1.75rem;
+  background-color: transparent;
+  z-index: 1;
+}
+.form__where .where__input__text svg {
+  position: absolute;
+  right: 0;
+  color: #727272;
+}
+
+.form__date {
+  width: 250px;
+}
+.form__date .date__input__text {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.form__date .date__input__text input {
+  border: none;
+  background-color: transparent;
+}
+
+.form__guest {
+  width: 100px;
+}
+.form__guest input {
+  border: none;
+  background-color: transparent;
+  color: #727272;
+}
+
+.form__button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  background-color: #3853DD;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  min-width: 1100px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgb(255, 255, 255) 60%), url("../assets/bgimage.jpg") no-repeat;
+  background-size: contain;
+}
+
+.main {
+  width: 85%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.greeting {
+  padding: 5rem;
+  width: 100%;
+}
+.greeting h2 {
+  width: 700px;
+  line-height: 0.9;
+  color: #2D2E2E;
+}
+.greeting h2 span:nth-child(1) {
+  display: block;
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+.greeting h2 span:nth-child(2) {
+  font-size: 3.5rem;
+}
+.greeting p {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #3853DD;
+  height: 1.5rem;
+  line-height: 1.6;
+}
+
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #ffffff;
+}
+.card__container .card__header {
+  padding: 3.5rem 3.5rem 0;
+  font-size: 2.125rem;
+  font-weight: 400;
+  width: 400px;
+}
+.card__container .card__header span {
+  font-weight: bold;
+}
+.card__container .card__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 5rem;
+  width: 100%;
+  row-gap: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

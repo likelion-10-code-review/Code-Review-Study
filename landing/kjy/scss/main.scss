@@ -1,0 +1,81 @@
+@use 'reset' as *;
+@use 'variables' as *;
+@use 'card' as *;
+@use 'button' as *;
+@use 'header' as *;
+@use 'reservation' as *;
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  min-width:1100px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 60%), url("../assets/bgimage.jpg") no-repeat;
+  background-size: contain;
+}
+
+.main {
+  width: 85%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.greeting {
+  padding: $spacing-80;
+  width: 100%;
+
+  h2 {
+    width: 700px;
+    line-height: 0.9;
+    color: $gray-300;
+    span:nth-child(1) {
+      display: block;
+      font-size: $text-50;
+      font-weight: bold;
+    }
+    span:nth-child(2) {
+      font-size: $text-56;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    border-left: 4px solid $blue;
+    height: 1.5rem;
+    line-height: 1.6;
+  }
+}
+
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $white;
+
+  .card__header {
+    padding: $spacing-56 $spacing-56 0;
+    font-size: $text-34;
+    font-weight: 400;
+    width: 400px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: $spacing-80;
+    width: 100%;
+    row-gap: $spacing-80;
+  }
+
+}
+
+
+
