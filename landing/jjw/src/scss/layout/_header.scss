@@ -1,0 +1,27 @@
+@use "../utils" as *;
+@use "../components/navigation";
+
+.header {
+  @include flexbox($justify: space-between, $align: center);
+  position: relative;
+  padding-block: $xx-small-spacing;
+  padding-inline-start: $medium-spacing;
+  padding-inline-end: $xx-large-spacing;
+
+  &__logo {
+    font-size: $x-large-text;
+    font-weight: 600;
+  }
+
+  &__search-form {
+    @include absolute($top: 50%, $left: 50%);
+    translate: -50% -50%;
+  }
+  &__search-input {
+    background: transparent;
+    border: none;
+    &::placeholder {
+      color: $black;
+    }
+  }
+}

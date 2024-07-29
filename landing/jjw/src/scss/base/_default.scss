@@ -8,9 +8,10 @@ body *::after {
 }
 
 body {
-  font-family: var.$base-font-family;
+  // font-family: var.$base-font-family;
   line-height: 1.15;
-  margin: 0;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 /* 숨김 콘텐츠 */

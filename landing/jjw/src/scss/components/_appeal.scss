@@ -1,0 +1,17 @@
+@use "../utils" as *;
+
+.appeal {
+  &__image {
+    margin-block-end: $x-small-spacing;
+    width: 4rem;
+    height: 4rem;
+  }
+  &__title {
+    margin-block-end: $xxx-small-spacing;
+    font-size: $base-text;
+    font-weight: 600;
+  }
+  &__description {
+    color: gray;
+  }
+}

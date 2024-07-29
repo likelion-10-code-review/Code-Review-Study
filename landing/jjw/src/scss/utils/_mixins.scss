@@ -28,11 +28,20 @@
 }
 
 // Gridbox
-@mixin gridbox($column-count, $row-count: null, $column-gap: null, $row-gap: null) {
+@mixin gridbox($column-count, $row-count: auto, $column-gap: null, $row-gap: null) {
   display: grid;
   grid-template-columns: repeat($column-count, 1fr);
   grid-template-rows: repeat($row-count, 1fr);
   gap: $row-gap $column-gap;
+}
+
+// Absolute
+@mixin absolute($top: null, $bottom: null, $left: null, $right: null) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
 }
 
 // 미디어쿼리 중단점
