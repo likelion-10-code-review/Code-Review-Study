@@ -1,0 +1,61 @@
+@import url(reset.css);
+
+body {
+  padding: 30px 50px 30px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #181818;
+  h1 {
+    left: 0px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.menu {
+  &__container {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 0px;
+  }
+}
+
+main {
+  padding-top: 30px;
+  margin-left: 30px;
+  .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    &__first {
+      font-weight: bold;
+    }
+    &__explain {
+      margin-bottom: 40px;
+    }
+  }
+
+  .select {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    &__input {
+      background-color: #fbfbfb;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      // border: 1px solid #181818;
+      input {
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+}
