@@ -7,10 +7,11 @@
   top: 0;
   width: 100%;
   padding: $large-spacing;
-}
 
-.title {
-  font-size: $extra-large-text;
-  font-weight: 900;
-  color: $white;
+  &-title-link {
+    font-size: $extra-large-text;
+    font-weight: 900;
+    color: $white;
+    text-decoration: none;
+  }
 }

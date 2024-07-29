@@ -23,7 +23,9 @@
   padding: 0;
   border: none;
   font-size: var(--medium-text);
-  background: none;
+  background: transparent;
   color: var(--pink-400);
   cursor: pointer;
 }
+
+/* 파일이 삭제된 이유에 대해 알고 싶습니다.. */
