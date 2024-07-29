@@ -3,7 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>le collectionist</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <!-- 헤더 -->
+      <header class="header">
+        <h1 class="header__logo">le collectionist</h1>
+
+        <form action="/" class="header__search-form">
+          <span class="fas fa-magnifying-glass"></span>
+          <label for="search-input" class="sr-only">목적지 검색</label>
+          <input id="search-input" type="text" placeholder="FIND A DESTINATION" class="header__search-input" />
+        </form>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item"><a href="#">NOS DEMEURES</a></li>
+            <li class="navigation__list-item"><a href="#">CONNEXION</a></li>
+            <li class="navigation__list-item"><a href="#">INSCRIPTION</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="represent">
+        <h2 class="represent__title">
+          <span class="represent__title--primary">Beautiful</span>
+          <br />
+          <span class="represent__title--secondary">vacation moments.</span>
+        </h2>
+        <p class="represent__description">We offer exceptional houses and experiences</p>
+        <form action="/" class="represent__form">
+          <div role="group" class="represent__form-group">
+            <label for="destination-input" class="represent__form-label">WHERE?</label>
+            <input
+              type="text"
+              name="destination-input"
+              placeholder="Your Destination"
+              id="destination-input"
+              class="represent__form-input" />
+          </div>
+
+          <div role="group" class="represent__form-group">
+            <label for="date-input" class="represent__form-label">DATE</label>
+            <input
+              type="text"
+              name="date-input"
+              placeholder="Thu. 26/1/17 - Fri. 30/1/17"
+              id="date-input"
+              class="represent__form-input" />
+          </div>
+
+          <div role="group" class="represent__form-group">
+            <label for="guest-input" class="represent__form-label">GUEST</label>
+            <input type="number" name="guest-input" id="guest-input" class="represent__form-input" />
+          </div>
+
+          <button type="submit" class="button represent__form-button">
+            <span class="fas fa-right-long"></span>
+          </button>
+        </form>
+
+        <!-- side -->
+      </section>
+
+      <section class="discover">
+        <h2 class="discover__title">
+          <span class="discover__title--primary">Discover</span>
+          <span class="discover__title--secondary">our best<br />experiences.</span>
+        </h2>
+        <ul class="discover-contents">
+          <li>
+            <article class="card">
+              <div class="card__wrapper">
+                <img src="https://picsum.photos/id/684/600/400" alt="" class="card__image" />
+                <div class="card__text-box">
+                  <h3 class="card__title">Wild Hiza</h3>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed ullam optio repellat soluta
+                    illum. Saepe possimus amet esse eligendi illum sed quod dolore ex. Quia accusamus perferendis
+                    laboriosam reprehenderit.
+                  </p>
+                  <a href="#" class="card__link">DISCOVER <span class="fas fa-right-long"></span></a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div class="card__wrapper">
+                <img src="https://picsum.photos/id/685/600/400" alt="" class="card__image" />
+                <div class="card__text-box">
+                  <h3 class="card__title">On the roads of prauence</h3>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed ullam optio repellat soluta
+                    illum. Saepe possimus amet esse eligendi illum sed quod dolore ex. Quia accusamus perferendis
+                    laboriosam reprehenderit.
+                  </p>
+                  <a href="#" class="card__link">DISCOVER <span class="fas fa-right-long"></span></a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div class="card__wrapper">
+                <img src="https://picsum.photos/id/686/600/400" alt="" class="card__image" />
+                <div class="card__text-box">
+                  <h3 class="card__title">Honeymoon Time</h3>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed ullam optio repellat soluta
+                    illum. Saepe possimus amet esse eligendi illum sed quod dolore ex. Quia accusamus perferendis
+                    laboriosam reprehenderit.
+                  </p>
+                  <a href="#" class="card__link">DISCOVER <span class="fas fa-right-long"></span></a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div class="card__wrapper">
+                <img src="https://picsum.photos/id/687/600/400" alt="" class="card__image" />
+                <div class="card__text-box">
+                  <h3 class="card__title">Road Trip</h3>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed ullam optio repellat soluta
+                    illum. Saepe possimus amet esse eligendi illum sed quod dolore ex. Quia accusamus perferendis
+                    laboriosam reprehenderit.
+                  </p>
+                  <a href="#" class="card__link">DISCOVER <span class="fas fa-right-long"></span></a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div class="card__wrapper">
+                <img src="https://picsum.photos/id/688/600/400" alt="" class="card__image" />
+                <div class="card__text-box">
+                  <h3 class="card__title">ROYAL HOUSE</h3>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed ullam optio repellat soluta
+                    illum. Saepe possimus amet esse eligendi illum sed quod dolore ex. Quia accusamus perferendis
+                    laboriosam reprehenderit.
+                  </p>
+                  <a href="#" class="card__link">DISCOVER <span class="fas fa-right-long"></span></a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div class="card__wrapper">
+                <img src="https://picsum.photos/id/689/600/400" alt="" class="card__image" />
+                <div class="card__text-box">
+                  <h3 class="card__title">Into the wild</h3>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed ullam optio repellat soluta
+                    illum. Saepe possimus amet esse eligendi illum sed quod dolore ex. Quia accusamus perferendis
+                    laboriosam reprehenderit.
+                  </p>
+                  <a href="#" class="card__link">DISCOVER <span class="fas fa-right-long"></span></a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <button type="button" class="button discover__button">MORE DESTINATIONS</button>
+      </section>
+    </main>
+
+    <section class="commitments">
+      <h2 class="commitments__title">
+        <span class="commitments__title--primary">Our</span>
+        <span class="commitments__title--secondary">commitments.</span>
+      </h2>
+      <ul class="commitments-contents">
+        <li>
+          <article class="appeal">
+            <img src="" alt="" class="appeal__image" />
+            <h3 class="appeal__title">Exceptional houses</h3>
+            <p class="appeal__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repudiandae deleniti tempora atque explicabo
+              minus qui harum, aliquam molestiae ea nesciunt ipsum perferendis in, magni mollitia nihil dolore animi
+              esse.
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="appeal">
+            <img src="" alt="" class="appeal__image" />
+            <h3 class="appeal__title">Active and support</h3>
+            <p class="appeal__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit similique illo esse at
+              necessitatibus voluptatibus officia molestias perferendis, dolorem vitae, id eligendi soluta. Dicta sed
+              necessitatibus neque officia eaque!
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="appeal">
+            <img src="" alt="" class="appeal__image" />
+            <h3 class="appeal__title">Original experiences</h3>
+            <p class="appeal__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas asperiores, atque natus totam
+              nesciunt aut nam culpa voluptates tenetur quis ullam minus excepturi quisquam illum blanditiis esse
+              voluptas et.
+            </p>
+          </article>
+        </li>
+      </ul>
+
+      <img class="commitments__side-image" src="https://picsum.photos/id/1060/400/600" alt="" />
+    </section>
+
+    <section class="affect">
+      <section class="press">
+        <h3 class="press__title">
+          <span class="press__title--primary">Our</span>
+          <span class="press__title--secondary">Press.</span>
+        </h3>
+        <img class="press__image" src="https://picsum.photos/id/42/400/600" alt="" />
+      </section>
+      <section class="awards">
+        <h3 class="awards__title">
+          <span class="awards__title--primary">Our</span>
+          <span class="awards__title--secondary">Awards.</span>
+        </h3>
+        <ul class="awards-list">
+          <li class="awards-list__item"></li>
+          <li class="awards-list__item"></li>
+          <li class="awards-list__item"></li>
+          <li class="awards-list__item"></li>
+          <li class="awards-list__item"></li>
+          <li class="awards-list__item"></li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="testimonials__title">
+        <span class="testimonials__title--primary">Customers</span>
+        <span class="testimonials__title--secondary">Testimonials.</span>
+      </h2>
+      <div></div>
+    </section>
+  </body>
 </html>

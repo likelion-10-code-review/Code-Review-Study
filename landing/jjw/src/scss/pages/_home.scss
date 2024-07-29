@@ -1,0 +1,163 @@
+@use "../utils" as *;
+@use "../layout";
+@use "../components/card";
+@use "../components/button";
+@use "../components/appeal";
+
+main {
+  background: $gray;
+}
+
+.represent {
+  padding: $x-small-spacing 11.875rem $xxx-small-spacing;
+  margin-block-end: $medium-spacing;
+
+  &__title {
+    font-size: $xx-large-text;
+    line-height: 1;
+    margin-block-end: $x-small-spacing;
+
+    &--primary {
+      font-weight: 600;
+    }
+    &--secondary {
+      font-weight: 300;
+    }
+  }
+
+  &__description {
+    font-size: $large-text;
+    margin-block-end: $small-spacing;
+    padding-inline-start: 0.5rem;
+    border-left: 3px solid $blue;
+  }
+
+  &__form {
+    @include flexbox($gap: 2px);
+    &-group {
+      @include flexbox($direction: column, $gap: 0.5rem);
+      background: $white;
+      padding: $xxx-small-spacing;
+    }
+
+    &-label {
+      font-size: $xx-small-text;
+      font-weight: 600;
+    }
+    &-input {
+      border: none;
+      font-size: $x-small-text;
+      width: 200px;
+    }
+    &-button {
+      margin-inline-start: $xx-small-spacing;
+    }
+  }
+}
+
+.discover {
+  @include flexbox($direction: column);
+
+  margin-inline: $x-large-spacing;
+  padding: $x-large-spacing;
+  background-color: $white;
+
+  &__title {
+    margin-block-end: $x-small-spacing;
+    font-size: $x-large-text;
+
+    &--primary {
+      font-weight: 600;
+    }
+    &--secondary {
+      font-weight: 300;
+    }
+  }
+
+  &-contents {
+    @include gridbox($column-count: 2);
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.commitments {
+  position: relative;
+  margin-inline-start: $x-large-spacing;
+  margin-block-end: 15rem;
+  padding-block: $x-large-spacing;
+  padding-inline-start: $x-large-spacing;
+  padding-inline-end: calc($base-spacing + 25rem);
+  background-color: $gray;
+
+  &__title {
+    font-size: $x-large-text;
+    margin-block-end: $base-spacing;
+
+    &--primary {
+      font-weight: 600;
+    }
+    &--secondary {
+      font-weight: 300;
+    }
+  }
+
+  &-contents {
+    @include flexbox($gap: $base-spacing);
+  }
+
+  &__side-image {
+    position: absolute;
+    top: $x-large-spacing;
+    right: 0;
+    width: 25rem;
+    height: 36rem;
+  }
+}
+
+.affect {
+  position: relative;
+  @include flexbox($justify: flex-end, $gap: $x-large-spacing);
+  padding: $x-large-spacing;
+  background-color: $navy;
+  margin-inline-end: $x-large-spacing;
+  margin-block-end: $large-spacing;
+  color: $white;
+}
+
+.press {
+  &__title {
+    font-size: $x-large-text;
+    margin-block-end: $base-spacing;
+
+    &--primary {
+      font-weight: 600;
+    }
+    &--secondary {
+      font-weight: 300;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 16rem;
+    height: 32rem;
+    left: 0;
+  }
+}
+
+.awards {
+  &__title {
+    font-size: $x-large-text;
+    margin-block-end: $base-spacing;
+
+    &--primary {
+      font-weight: 600;
+    }
+    &--secondary {
+      font-weight: 300;
+    }
+  }
+}

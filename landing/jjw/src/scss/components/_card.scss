@@ -1,0 +1,43 @@
+@use "../utils" as *;
+
+.card {
+  height: 14rem;
+  padding-inline-end: $large-spacing;
+  margin-block-end: $medium-spacing;
+
+  &__wrapper {
+    @include flexbox($gap: $x-small-spacing);
+  }
+
+  &__image {
+    width: 10.5rem;
+    height: 14rem;
+  }
+
+  &__text-box {
+    @include flexbox($direction: column, $justify: flex-end, $gap: $xxx-small-spacing);
+  }
+
+  &__title {
+    width: calc(100% - $large-spacing);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: $large-text;
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: $small-text;
+    color: gray;
+    max-height: 9rem;
+    overflow: scroll;
+    // text-overflow: ellipsis;
+  }
+
+  &__link {
+    font-size: $small-text;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
