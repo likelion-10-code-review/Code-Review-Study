@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -6,17 +6,38 @@
     <title>Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Farsan&family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Square+Peg&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body class="h-screen font-roboto bg-gradient-to-b from-slate-200 to-white text-gray-800">
-    <header class="flex justify-between items-center px-16 py-5 mb-6">
-      <h1 aria-label="logo"><a href="#" class="text-2xl font-medium">le collectionist</a></h1>
-      <form class="text-sm flex gap-3 items-center">
+  <body
+    class="bg-white bg-gradient-to-b from-slate-200 to-white font-roboto text-gray-800"
+  >
+    <header class="mb-6 flex items-center justify-between px-16 py-5">
+      <h1 aria-label="logo">
+        <a href="#" class="text-2xl font-medium">le collectionist</a>
+      </h1>
+      <form class="flex items-center gap-3 text-sm">
         <span class="fa-solid fa-magnifying-glass"></span>
         <label for="search" class="sr-only">search</label>
-        <input type="text" name="search" id="search" placeholder="FIND A DESTINATION" class="placeholder:text-gray-800 bg-transparent" />
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="FIND A DESTINATION"
+          class="bg-transparent placeholder:text-gray-800"
+        />
       </form>
       <nav class="flex gap-3 text-sm">
         <form>
@@ -35,47 +56,188 @@
       </nav>
     </header>
     <main>
-      <section aria-label="travel-plan" class="pl-28 mb-16 relative">
-        <h2 class="text-5xl font-light mb-6">
+      <section class="relative mb-20 pl-32">
+        <h2 class="sr-only">travel plan</h2>
+        <p class="mb-6 text-5xl font-light">
           <strong class="font-medium">Beautiful</strong> <br />
           vacation monents.
-        </h2>
-        <span class="block mb-12 pl-3 before:content-[''] before:w-[2px] before:h-[18px] before:bg-blue-600 relative before:absolute before:top-[2px] before:left-0">We offer exceptional houses and experiences</span>
-        <form aria-label="vacation plan search" class="flex items-center h-16">
-          <div role="group" class="flex flex-col justify-center px-5 h-full bg-white border-r-[1px]">
-            <label for="destination-search" class="block text-sm font-medium">WHERE?</label>
+        </p>
+        <span
+          class="relative mb-12 block pl-3 before:absolute before:left-0 before:top-[2px] before:h-[18px] before:w-[2px] before:bg-blue-600 before:content-['']"
+          >We offer exceptional houses and experiences</span
+        >
+        <form aria-label="vacation plan search" class="flex h-16 items-center">
+          <div
+            role="group"
+            class="flex h-full flex-col justify-center border-r-[1px] bg-white px-5"
+          >
+            <label for="destination-search" class="block text-sm font-medium"
+              >WHERE?</label
+            >
             <div role="group">
-              <input type="text" name="destination-search" id="destination-search" placeholder="Your Destination" />
+              <input
+                type="text"
+                name="destination-search"
+                id="destination-search"
+                placeholder="Your Destination"
+              />
               <span class="fa-regular fa-paper-plane"></span>
             </div>
           </div>
-          <div role="group" class="flex flex-col justify-center px-5 h-full bg-white border-r-[1px]">
+          <div
+            role="group"
+            class="flex h-full flex-col justify-center border-r-[1px] bg-white px-5"
+          >
             <span class="text-sm font-medium">DATE</span>
             <div role="group">
-              <label for="first-day-of-travel" class="sr-only">first day of travel</label>
-              <input type="date" name="first-day-of-travel" id="first-day-of-travel" />
+              <label for="first-day-of-travel" class="sr-only"
+                >first day of travel</label
+              >
+              <input
+                type="date"
+                name="first-day-of-travel"
+                id="first-day-of-travel"
+              />
               <span aria-hidden="true">-</span>
-              <label for="last-day-of-travel" class="sr-only">last day of travel</label>
-              <input type="date" name="last-day-of-travel" id="last-day-of-travel" />
+              <label for="last-day-of-travel" class="sr-only"
+                >last day of travel</label
+              >
+              <input
+                type="date"
+                name="last-day-of-travel"
+                id="last-day-of-travel"
+              />
             </div>
           </div>
-          <div role="group" class="flex flex-col justify-center px-5 h-full bg-white">
-            <label for="number-of-guest" class="block text-sm font-medium">GUEST</label>
+          <div
+            role="group"
+            class="flex h-full flex-col justify-center bg-white px-5"
+          >
+            <label for="number-of-guest" class="block text-sm font-medium"
+              >GUEST</label
+            >
             <input type="number" name="number-of-guest" id="number-of-guest" />
           </div>
-          <button class="w-16 h-full ml-4 bg-blue-600 text-white">
+          <button class="ml-4 h-full w-16 bg-blue-600 text-white">
             <span class="fa-solid fa-arrow-right"></span>
           </button>
         </form>
-        <div role="group" class="flex items-center gap-4 absolute bottom-0 right-0 pl-7 pr-5 py-4 border-t-[1px] border-white text-sm">
+        <div
+          role="group"
+          class="absolute bottom-0 right-0 flex items-center gap-4 border-t-[1px] border-white py-4 pl-7 pr-5 text-sm"
+        >
           <span class="text-right text-white">
             <strong>112 LOCATIONS</strong> <br />
             Spain
           </span>
-          <a href="#" class="w-7 h-7 rounded-full bg-[rgba(255,255,255,0.5)] flex justify-center items-center"><span class="fa-solid fa-arrow-right"></span></a>
+          <a
+            href="#"
+            class="flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(255,255,255,0.5)]"
+            ><span class="fa-solid fa-arrow-right"></span
+          ></a>
         </div>
       </section>
-      <section></section>
+      <section class="relative mx-20 h-full bg-white px-28 pb-28 pt-20">
+        <h2 class="sr-only">Discover experiences</h2>
+        <p class="mb-12 text-2xl font-light">
+          <strong class="font-medium">Discover</strong> our best <br />
+          experiences.
+        </p>
+        <ul class="mb-20 grid grid-cols-2 gap-x-20 gap-y-14">
+          <li class="flex items-center gap-12">
+            <img src="https://placehold.co/180x240" alt="" />
+            <div role="group">
+              <h3 class="mb-5 font-pattaya text-3xl">Wild Tbiza</h3>
+              <p class="mb-6 text-sm font-normal text-gray-400">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                quam amet itaque reprehenderit ex, architecto ipsum ea vel
+                delectus iste.
+              </p>
+              <a href="#" class="text-xs font-semibold uppercase text-blue-600"
+                >discover&nbsp;&nbsp;&nbsp;→</a
+              >
+            </div>
+          </li>
+          <li class="flex items-center gap-12">
+            <img src="https://placehold.co/180x240" alt="" />
+            <div role="group">
+              <h3 class="mb-5 font-SquarePeg text-3xl leading-[1]">
+                On the roads <br />
+                of Provence
+              </h3>
+              <p class="mb-6 text-sm font-normal text-gray-400">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                quam amet itaque reprehenderit ex, architecto ipsum ea vel
+                delectus iste.
+              </p>
+              <a href="#" class="text-xs font-semibold uppercase text-blue-600"
+                >discover&nbsp;&nbsp;&nbsp;→</a
+              >
+            </div>
+          </li>
+          <li class="flex items-center gap-12">
+            <img src="https://placehold.co/180x240" alt="" />
+            <div role="group">
+              <h3 class="font-Farsan mb-5 text-3xl">Honeymoon Time</h3>
+              <p class="mb-6 text-sm font-normal text-gray-400">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                quam amet itaque reprehenderit ex, architecto ipsum ea vel
+                delectus iste.
+              </p>
+              <a href="#" class="text-xs font-semibold uppercase text-blue-600"
+                >discover&nbsp;&nbsp;&nbsp;→</a
+              >
+            </div>
+          </li>
+          <li class="flex items-center gap-12">
+            <img src="https://placehold.co/180x240" alt="" />
+            <div role="group">
+              <h3 class="mb-5 font-roboto text-3xl">Road Trip</h3>
+              <p class="mb-6 text-sm font-normal text-gray-400">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                quam amet itaque reprehenderit ex, architecto ipsum ea vel
+                delectus iste.
+              </p>
+              <a href="#" class="text-xs font-semibold uppercase text-blue-600"
+                >discover&nbsp;&nbsp;&nbsp;→</a
+              >
+            </div>
+          </li>
+          <li class="flex items-center gap-12">
+            <img src="https://placehold.co/180x240" alt="" />
+            <div role="group">
+              <h3 class="font-Cinzel mb-5 text-3xl">Royal House</h3>
+              <p class="mb-6 text-sm font-normal text-gray-400">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                quam amet itaque reprehenderit ex, architecto ipsum ea vel
+                delectus iste.
+              </p>
+              <a href="#" class="text-xs font-semibold uppercase text-blue-600"
+                >discover&nbsp;&nbsp;&nbsp;→</a
+              >
+            </div>
+          </li>
+          <li class="flex items-center gap-12">
+            <img src="https://placehold.co/180x240" alt="" />
+            <div role="group">
+              <h3 class="font-Vidaloka mb-5 text-3xl">Into the wild</h3>
+              <p class="mb-6 text-sm font-normal text-gray-400">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                quam amet itaque reprehenderit ex, architecto ipsum ea vel
+                delectus iste.
+              </p>
+              <a href="#" class="text-xs font-semibold uppercase text-blue-600"
+                >discover&nbsp;&nbsp;&nbsp;→</a
+              >
+            </div>
+          </li>
+        </ul>
+        <button
+          class="absolute left-1/2 -translate-x-1/2 bg-blue-600 px-6 py-4 text-sm font-normal text-white"
+        >
+          MORE DESTINATIONS
+        </button>
+      </section>
     </main>
   </body>
 </html>
